@@ -1,0 +1,336 @@
+errors :
+CLOB WS: 'list' object has no attribute 'get' — reconnect in 2s
+⏰ Pending order 0x0d6568bc timed out after 39.4s — canceling (BTC UP)
+[CLOB] ❌ Cancel failed: 'str' object has no attribute 'orderID'
+  #2 * [SINGLE] BTC UP 78% @ 0.505 | btc_volume_sniper
+[12:10:34.987] [INIT  ] CLOB Market WS connected + subscribed
+[12:10:36.385] [SCAN  ] Round #5 | ⚡GRIN 1.57 pUSD | W/L:0/0 (0%) | DD:50.2% | L0
+[12:10:36.514] [SCAN  ] Found 4 markets (1 coins x 1 TFs)
+[12:10:45.659] [INFO  ] 💾 State saved: 1 open, 0 pending
+[12:10:45.661] [WARN  ] CLOB WS: 'list' object has no attribute 'get' — reconnect in 2s
+[12:10:45.991] [DEBUG ] Prefetched 8 token orderbooks (scan #5)
+CLOB Market WS connected + subscribed
+[12:15:53.848] [SCAN  ] Round #63 | ⚡GRIN 1.57 pUSD | W/L:0/0 (0%) | DD:50.2% | L0
+[12:15:53.967] [SCAN  ] Found 4 markets (1 coins x 1 TFs)
+  📋 Found 1 positions (0 redeemable)
+[12:15:58.222] [TRADE ] 🔚 Closing LIVE BTC UP — reason=timeout (364s)
+[py_clob_client_v2] request error status=425 url=https://clob.polymarket.com/cancel-all body=service not ready
+[CLOB] ❌ Cancel all failed: PolyApiException[status_code=425, error_message=service not ready]
+[12:15:58.784] [DEBUG ]    🗑️ Cancelled existing orders before exit
+[12:15:59.115] [TRADE ]    📤 EXIT [tier1_fok_best_bid] FOK SELL 3.00sh @ 0.500 (best_bid=0.500)
+[12:19:01.994] [TRADE ]    📤 EXIT [urgent_tier1_fok_best_bid] FOK SELL 3.00sh @ 0.500 (best_bid=0.500)
+[CLOB] 📤 V2 FOK SELL 3.00sh (own 3.00) @ $0.50 = $1.50
+[py_clob_client_v2] request error status=503 url=https://clob.polymarket.com/order body={"error":"post-only mode: only post-only orders and cancels are allowed","code":"post_only_mode","retry_after_seconds":34}
+[CLOB] ❌ SELL order failed: PolyApiException[status_code=503, error_message={'error': 'post-only mode: only post-only orders and cancels are allowed', 'code': 'post_only_mode', 'retry_after_seconds': 34}]
+[12:19:02.323] [WARN  ]    ⚠️ urgent_tier1_fok_best_bid returned no result, trying next ti
+[12:19:35.216] [TRADE ] 🔚 Closing LIVE BTC UP — reason=timeout (581s)
+[12:19:36.361] [DEBUG ]    🗑️ Cancelled existing orders before exit
+[12:19:36.865] [TRADE ]    📤 EXIT [urgent_tier1_fok_best_bid] FOK SELL 3.00sh @ 0.700 (best_bid=0.700)
+[CLOB] 📤 V2 FOK SELL 3.00sh (own 3.00) @ $0.70 = $2.10
+[CLOB] ✅ SELL placed: id=0x58136a9c2eac0a53ff0c630d5e64b4bdd7e27e22aac97003caae208fa6260245 status=matched
+[12:19:37.698] [TRADE ]    ✅ Exit filled via urgent_tier1_fok_best_bid
+[12:19:38.232] [TRADE ]    ✅ Exit FILLED @ 0.505 via urgent_tier1_fok_best_bid (id=0x58136a9c2eac0a53ff0c630d5e64b4bdd7e27e22aac97003caae208fa6260245)
+[12:19:38.238] [INFO  ] 💾 State saved: 0 open, 0 pending
+[12:19:38.245] [TRADE ] ❌ EXIT: BTC UP PnL=+0.00pUSD (+0.0%) exit=0.505 reason=timeout (581s) strat=btc_volume_sniper
+[12:19:41.916] [INFO  ] 💰 Balance refresh (exit_fill): 1.57 → 3.72 pUSD
+[12:19:41.916] [INFO  ] 📤 Exit triggered: BTC UP — timeout (581s)
+[12:19:41.921] [INFO  ] Closed 1 positions this scan
+[12:39:38.596] [TRADE ]    📤 FAST ORDER: BUY @ 0.495 (FOK→GTC)
+[CLOB] 📤 V2 FOK BUY 2.00sh @ $0.49 = $0.98 pUSD
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"invalid amount for a marketable BUY order ($0.98), min size: $1"}
+[CLOB] ❌ FOK error: PolyApiException[status_code=400, error_message={'error': 'invalid amount for a marketable BUY order ($0.98), min size: $1'}]
+[CLOB] 📤 V2 GTC BUY 2.09sh @ $0.48 = $1.00 pUSD
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"order 0xb26e4493bc95702cf2ea26f2d6d5b85b7ca034575b73f8a4285e4ef2d126b414 is invalid. Size (2.09) lower than the minimum: 5"}
+[CLOB] ❌ GTC fallback also failed: PolyApiException[status_code=400, error_message={'error': 'order 0xb26e4493bc95702cf2ea26f2d6d5b85b7ca034575b73f8a4285e4ef2d126b414 is invalid. Size (2.09) lower than the minimum: 5'}]
+[12:39:39.549] [ERROR ]    ❌ Order placement FAILED: PolyApiException[status_code=400, error_message={'error': 'order 0xb26e4493bc95702cf2ea26f2d6d5b85b7ca034575b73f8a4285e4ef2d126b414 is invalid. Size (2.09) lower than the minimum: 5'}]
+[12:39:39.549] [INIT  ] CLOB Market WS connected + subscribed
+[12:41:48.760] [TRADE ] 🔚 Closing LIVE BTC UP — reason=stop_loss (-15.4%, sl=-11%)
+[12:41:49.296] [DEBUG ]    🗑️ Cancelled existing orders before exit
+[12:41:49.594] [TRADE ]    📤 EXIT [urgent_tier1_fok_best_bid] FOK SELL 2.23sh @ 0.390 (best_bid=0.390)
+[CLOB] ⚠️ Sell order below min: 0.78 < 1.0. shares=2.00 @ 0.39
+[CLOB] ❌ Can't reach min (need 2.56sh, own 2.23sh)
+[12:41:49.594] [WARN  ]    ⚠️ urgent_tier1_fok_best_bid returned no result, trying next tier
+[12:41:49.899] [TRADE ]    📤 EXIT [urgent_tier2_gtc_5tick] GTC SELL 2.23sh @ 0.340 (best_bid=0.390)
+[CLOB] ⚠️ Sell order below min: 0.68 < 1.0. shares=2.00 @ 0.34
+[CLOB] ❌ Can't reach min (need 2.94sh, own 2.23sh)
+[12:41:49.901] [WARN  ]    ⚠️ urgent_tier2_gtc_5tick returned no result, trying next tier
+[12:41:50.235] [TRADE ]    📤 EXIT [urgent_tier3_deep_cut] GTC SELL 2.23sh @ 0.250 (best_bid=0.400)
+[12:42:02.074] [TRADE ] 🔚 Closing LIVE BTC UP — reason=stop_loss (-11.0%, sl=-11%)
+[12:42:03.088] [DEBUG ]    🗑️ Cancelled existing orders before exit
+[12:42:03.395] [TRADE ]    📤 EXIT [urgent_tier1_fok_best_bid] FOK SELL 2.23sh @ 0.460 (best_bid=0.460)
+[CLOB] ⚠️ Sell order below min: 0.92 < 1.0. shares=2.00 @ 0.46
+[CLOB] 📤 V2 FOK SELL 2.23sh (own 2.23) @ $0.46 = $1.03
+[CLOB] ✅ SELL placed: id=0xe9ad214b06e77e1cbcb2373e468f65ea13cf57c8bf419c96775ee953689592a5 status=matched
+[12:42:04.657] [TRADE ]    ✅ Exit filled via urgent_tier1_fok_best_bid
+[12:42:04.984] [TRADE ]    ✅ Exit FILLED @ 0.405 via urgent_tier1_fok_best_bid (id=0xe9ad214b06e77e1cbcb2373e468f65ea13cf57c8bf419c96775ee953689592a5)
+[12:42:04.989] [INFO  ] 💾 State saved: 1 open, 0 pending
+[12:42:04.997] [TRADE ] ❌ EXIT: BTC UP PnL=-0.11pUSD (-11.0%) exit=0.405 reason=stop_loss (-11.0%, sl=-11%) strat=btc_volume_sniper
+
+here trade and what happened in polymarket :
+[12:09:52.979] [TRADE ]    Reason: [SINGLE:1/12 agree] BTC low-volume sniper: vol=$167 → 80% UP win rate (backtest n=1460). BUY UP @ 0.505
+[12:09:52.979] [TRADE ]    📤 FAST ORDER: BUY @ 0.505 (FOK→GTC)
+[CLOB] 📤 V2 FOK BUY 3.00sh @ $0.51 = $1.53 pUSD
+[CLOB] ✅ Order placed: id=0x1687533a257f70de543a5ae422b95777e0be49f0a5e4525cf4a946ce399d538b status=matched
+[CLOB] ⚡ FOK FILLED in 930ms @ 0.510
+[12:09:53.909] [TRADE ]    📨 Order placed: id=0x1687533a257f70de543a5ae422b95777e0be49f0a5e4525cf4a946ce399d538b status=MATCHED
+[12:09:54.240] [INFO  ] 💾 State saved: 1 open, 1 pending
+[12:09:54.243] [TRADE ]    ✅ FILLED immediately: b9210a6a @ 0.505 TP=+15% SL=-11%
+
+[12:19:26.341] [SCAN  ] Found 4 markets (1 coins x 1 TFs)
+[12:19:35.216] [TRADE ] 🔚 Closing LIVE BTC UP — reason=timeout (581s)
+[12:19:36.361] [DEBUG ]    🗑️ Cancelled existing orders before exit
+[12:19:36.865] [TRADE ]    📤 EXIT [urgent_tier1_fok_best_bid] FOK SELL 3.00sh @ 0.700 (best_bid=0.700)
+[CLOB] 📤 V2 FOK SELL 3.00sh (own 3.00) @ $0.70 = $2.10
+[CLOB] ✅ SELL placed: id=0x58136a9c2eac0a53ff0c630d5e64b4bdd7e27e22aac97003caae208fa6260245 status=matched
+[12:19:37.698] [TRADE ]    ✅ Exit filled via urgent_tier1_fok_best_bid
+[12:19:38.232] [TRADE ]    ✅ Exit FILLED @ 0.505 via urgent_tier1_fok_best_bid (id=0x58136a9c2eac0a53ff0c630d5e64b4bdd7e27e22aac97003caae208fa6260245)
+[12:19:38.238] [INFO  ] 💾 State saved: 0 open, 0 pending
+[12:19:38.245] [TRADE ] ❌ EXIT: BTC UP PnL=+0.00pUSD (+0.0%) exit=0.505 reason=timeout (581s) strat=btc_volume_sniper
+[12:19:41.916] [INFO  ] 💰 Balance refresh (exit_fill): 1.57 → 3.72 pUSD
+
+somehow exited market after markets ends after 10 mins after 19 attempts round ,
+
+In real polymarket :
+buy : for Bitcoin Up or Down - May 20, 8:15AM-8:20AM ET
+Bitcoin Up or Down - May 20, 8:15AM-8:20AM ET
+Up 51¢
+3.0 shares
+
+sell :Bitcoin Up or Down - May 20, 8:15AM-8:20AM ET
+Up 73¢
+3.0 shares
+
+next : [12:19:48.094] [TRADE ] 🎯 ENTRY [⚡GRIND] BTC UP [SINGLE] size=2.16pUSD @ 0.505 (FAST (FOK→GTC)) conf=78% agree=1 | btc_volume_sniper
+[12:19:48.094] [TRADE ]    Reason: [SINGLE:1/12 agree] BTC low-volume sniper: vol=$65 → 80% UP win rate (backtest n=1460). BUY UP @ 0.505
+[12:19:48.094] [TRADE ]    📤 FAST ORDER: BUY @ 0.505 (FOK→GTC)
+[CLOB] 📤 V2 FOK BUY 4.00sh @ $0.51 = $2.04 pUSD
+[CLOB] ✅ Order placed: id=0xa8a9ceeb512de63e79c0155a9f13499fd3190eebe0a42e8100b190eec1f8314c status=matched
+[CLOB] ⚡ FOK FILLED in 2876ms @ 0.510
+[12:19:50.985] [TRADE ]    📨 Order placed: id=0xa8a9ceeb512de63e79c0155a9f13499fd3190eebe0a42e8100b190eec1f8314c status=MATCHED
+[12:19:51.515] [INFO  ] 💾 State saved: 1 open, 0 pending
+[12:19:51.516] [TRADE ]    ✅ FILLED immediately: 48226f4a @ 0.505 TP=+15% SL=-11%
+[12:19:55.984] [INFO  ] 💰 Balance refresh (entry_fill): 3.72 → 1.61 pUSD
+[12:25:55.122] [TRADE ] 🔚 Closing LIVE BTC UP — reason=timeout (364s)
+[12:25:55.758] [DEBUG ]    🗑️ Cancelled existing orders before exit
+[12:25:56.087] [TRADE ]    📤 EXIT [tier1_fok_best_bid] FOK SELL 4.00sh @ 0.500 (best_bid=0.500)
+[CLOB] 📤 V2 FOK SELL 4.00sh (own 4.00) @ $0.50 = $2.00
+[CLOB] ✅ SELL placed: id=0x39ae8a39de0defa1046f936229753a6ec87dfd91c1e37651e0d9f9dd5b59a4e8 status=matched
+[12:25:56.759] [TRADE ]    ✅ Exit filled via tier1_fok_best_bid
+[12:25:57.057] [TRADE ]    ✅ Exit FILLED @ 0.505 via tier1_fok_best_bid (id=0x39ae8a39de0defa1046f936229753a6ec87dfd91c1e37651e0d9f9dd5b59a4e8)
+[12:25:57.071] [INFO  ] 💾 State saved: 0 open, 0 pending
+[12:25:57.071] [TRADE ] ❌ EXIT: BTC UP PnL=+0.00pUSD (+0.0%) exit=0.505 reason=timeout (364s) strat=btc_volume_sniper
+[12:25:59.254] [INFO  ] 💰 Balance refresh (exit_fill): 1.61 → 3.54 pUSD
+
+real :
+buy :Bitcoin Up or Down - May 20, 8:30AM-8:35AM ET
+Up 51¢
+4.0 shares
+sell : Bitcoin Up or Down - May 20, 8:30AM-8:35AM ET
+Up 50¢
+4.0 shares
+
+
+next :
+[12:26:01.988] [TRADE ] 🎯 ENTRY [⚡GRIND] BTC UP [SINGLE] size=2.30pUSD @ 0.505 (FAST (FOK→GTC)) conf=85% agree=1 | btc_volume_sniper
+[12:26:02.001] [TRADE ]    Reason: [SINGLE:1/12 agree] BTC low-volume sniper: vol=$50 → 87% UP win rate (backtest n=2647). BUY UP @ 0.505
+[12:26:02.004] [TRADE ]    📤 FAST ORDER: BUY @ 0.505 (FOK→GTC)
+[CLOB] 📤 V2 FOK BUY 4.00sh @ $0.51 = $2.04 pUSD
+[CLOB] ✅ Order placed: id=0x2f06bfbc17d17d963510bc93f31d8a72394ebc875b6bb0b77345f510b59ab44b status=matched
+[CLOB] ⚡ FOK FILLED in 1031ms @ 0.510
+[12:26:03.036] [TRADE ]    📨 Order placed: id=0x2f06bfbc17d17d963510bc93f31d8a72394ebc875b6bb0b77345f510b59ab44b status=MATCHED
+[12:26:03.370] [INFO  ] 💾 State saved: 1 open, 0 pending
+[12:26:03.370] [TRADE ]    ✅ FILLED immediately: 53c71b87 @ 0.505 TP=+15% SL=-11%
+[12:26:05.185] [INFO  ] 💰 Balance refresh (entry_fill): 3.54 → 1.43 pUSD
+[12:32:09.610] [SCAN  ] Found 4 markets (1 coins x 1 TFs)
+[12:32:14.625] [TRADE ] 🔚 Closing LIVE BTC UP — reason=timeout (371s)
+[12:32:15.857] [DEBUG ]    🗑️ Cancelled existing orders before exit
+[12:32:16.191] [TRADE ]    📤 EXIT [tier1_fok_best_bid] FOK SELL 4.00sh @ 0.500 (best_bid=0.500)
+[CLOB] 📤 V2 FOK SELL 4.00sh (own 4.00) @ $0.50 = $2.00
+[CLOB] ✅ SELL placed: id=0x2a956bc5a8a8624286183893217bbefbaeda9069a6d13ac26503974260bceba6 status=matched
+[12:32:16.859] [TRADE ]    ✅ Exit filled via tier1_fok_best_bid
+[12:32:17.191] [TRADE ]    ✅ Exit FILLED @ 0.505 via tier1_fok_best_bid (id=0x2a956bc5a8a8624286183893217bbefbaeda9069a6d13ac26503974260bceba6)
+[12:32:17.197] [INFO  ] 💾 State saved: 0 open, 0 pending
+[12:32:17.201] [TRADE ] ❌ EXIT: BTC UP PnL=+0.00pUSD (+0.0%) exit=0.505 reason=timeout (371s) strat=btc_volume_sniper
+[12:32:19.175] [INFO  ] 💰 Balance refresh (exit_fill): 1.43 → 3.36 pUSD
+
+real :
+buy :Bitcoin Up or Down - May 20, 8:40AM-8:45AM ET
+Up 51¢
+4.0 shares
+sell : Bitcoin Up or Down - May 20, 8:40AM-8:45AM ET
+Up 50¢
+4.0 shares 
+next :[12:32:22.206] [TRADE ] 🎯 ENTRY [⚡GRIND] BTC UP [SINGLE] size=1.73pUSD @ 0.505 (FAST (FOK→GTC)) conf=85% agree=1 | btc_volume_sniper
+[12:32:22.210] [TRADE ]    Reason: [SINGLE:1/12 agree] BTC low-volume sniper: vol=$50 → 87% UP win rate (backtest n=2647). BUY UP @ 0.505
+[12:32:22.210] [TRADE ]    📤 FAST ORDER: BUY @ 0.505 (FOK→GTC)
+[CLOB] 📤 V2 FOK BUY 3.00sh @ $0.51 = $1.53 pUSD
+[CLOB] ✅ Order placed: id=0xf55b2ccc38920dee7dcf042ca335b0422487676ede6a3c36d0f2fec5dd00cae9 status=matched
+[CLOB] ⚡ FOK FILLED in 1046ms @ 0.510
+[12:32:23.256] [TRADE ]    📨 Order placed: id=0xf55b2ccc38920dee7dcf042ca335b0422487676ede6a3c36d0f2fec5dd00cae9 status=MATCHED
+[12:32:23.590] [INFO  ] 💾 State saved: 1 open, 0 pending
+[12:32:23.590] [TRADE ]    ✅ FILLED immediately: d03124a0 @ 0.505 TP=+15% SL=-11%
+[12:32:25.388] [INFO  ] 💰 Balance refresh (entry_fill): 3.36 → 3.36 pUSD
+[12:38:32.509] [TRADE ] 🔚 Closing LIVE BTC UP — reason=timeout (369s)
+[12:38:33.277] [DEBUG ]    🗑️ Cancelled existing orders before exit
+[12:38:33.620] [TRADE ]    📤 EXIT [tier1_fok_best_bid] FOK SELL 3.00sh @ 0.490 (best_bid=0.490)
+[CLOB] 📤 V2 FOK SELL 3.00sh (own 3.00) @ $0.49 = $1.47
+[CLOB] ✅ SELL placed: id=0xd2394d7e5961b910f22515e370c37b937838ea08621887beb032338d31ea2b8a status=matched
+[12:38:34.360] [TRADE ]    ✅ Exit filled via tier1_fok_best_bid
+[12:38:34.675] [TRADE ]    ✅ Exit FILLED @ 0.495 via tier1_fok_best_bid (id=0xd2394d7e5961b910f22515e370c37b937838ea08621887beb032338d31ea2b8a)
+[12:38:34.677] [INFO  ] 💾 State saved: 0 open, 0 pending
+[12:38:34.688] [TRADE ] ❌ EXIT: BTC UP PnL=-0.03pUSD (-2.0%) exit=0.495 reason=timeout (369s) strat=btc_volume_sniper
+[12:38:36.730] [INFO  ] 💰 Balance refresh (exit_fill): 1.74 → 3.19 pUSD
+
+real :
+buy :Bitcoin Up or Down - May 20, 8:40AM-8:45AM ET
+Up 51¢
+3.0 shares
+sell : Bitcoin Up or Down - May 20, 8:40AM-8:45AM ET
+Up 49¢
+3.0 shares
+next :
+[12:38:39.459] [TRADE ] 🎯 ENTRY [⚡GRIND] BTC UP [MEDIUM] size=2.07pUSD @ 0.265 (FAST (FOK→GTC)) conf=88% agree=2 | btc_volume_sniper
+[12:38:39.461] [TRADE ]    Reason: [MEDIUM:2/12 agree] BTC low-volume sniper: vol=$101 → 80% UP win rate (backtest n=1460). BUY UP @ 0.265
+[12:38:39.463] [TRADE ]    📤 FAST ORDER: BUY @ 0.265 (FOK→GTC)
+[CLOB] 📤 V2 FOK BUY 7.00sh @ $0.27 = $1.89 pUSD
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"order couldn't be fully filled. FOK orders are fully filled or killed.","orderID":"0xe8014c462a9b26ee0874d10b0d4c40e87898c5108df417e6f874330e5746bbcf"}
+[CLOB] ⚠️ FOK no fill (1812ms) — GTC fallback
+[CLOB] 📤 V2 GTC BUY 7.50sh @ $0.26 = $1.95 pUSD
+[CLOB] ✅ Order placed: id=0xcfe04bfd778c2af285ae399a31aa5268e497473364260a4af369ac5b9ff7d41c status=live
+[CLOB] ⏳ GTC on book @ 0.260 (2254ms) — tracking
+[12:38:41.717] [TRADE ]    📨 Order placed: id=0xcfe04bfd778c2af285ae399a31aa5268e497473364260a4af369ac5b9ff7d41c status=LIVE
+[12:38:41.724] [INFO  ] 💾 State saved: 0 open, 1 pending
+[12:38:41.725] [TRADE ]    ⏳ Order on book (not filled): 0xcfe04bfd778c2af285ae399a31aa5268e497473364260a4af369ac5b9ff7d41c — tracking for up to 30s
+[12:38:42.058] [TRADE ] 🎯 ENTRY [⚡GRIND] BTC UP [SINGLE] size=1.32pUSD @ 0.505 (FAST (FOK→GTC)) conf=85% agree=1 | btc_volume_sniper
+[12:38:42.058] [TRADE ]    Reason: [SINGLE:1/12 agree] BTC low-volume sniper: vol=$0 → 87% UP win rate (backtest n=2647). BUY UP @ 0.505
+[12:38:42.058] [TRADE ]    📤 FAST ORDER: BUY @ 0.505 (FOK→GTC)
+[CLOB] 📤 V2 FOK BUY 2.00sh @ $0.51 = $1.02 pUSD
+[CLOB] ✅ Order placed: id=0x357b36fe230931a882064355d0c040805fd671fdb536e0eb0b8e760e4c671e3b status=matched
+[CLOB] ⚡ FOK FILLED in 942ms @ 0.510
+[12:38:43.001] [TRADE ]    📨 Order placed: id=0x357b36fe230931a882064355d0c040805fd671fdb536e0eb0b8e760e4c671e3b status=MATCHED
+[12:38:43.310] [INFO  ] 💾 State saved: 1 open, 1 pending
+[12:38:43.312] [TRADE ]    ✅ FILLED immediately: d0c9465e @ 0.505 TP=+15% SL=-11%
+[12:38:45.185] [INFO  ] 💰 Balance refresh (entry_fill): 3.19 → 3.19 pUSD
+[12:38:45.186] [INFO  ] Executed BTC UP
+[12:38:45.507] [TRADE ] 🎯 ENTRY [⚡GRIND] BTC UP [SINGLE] size=1.11pUSD @ 0.495 (FAST (FOK→GTC)) conf=78% agree=1 | btc_volume_sniper
+[12:38:45.507] [TRADE ]    Reason: [SINGLE:1/12 agree] BTC low-volume sniper: vol=$83 → 80% UP win rate (backtest n=1460). BUY UP @ 0.495
+[12:38:45.507] [TRADE ]    📤 FAST ORDER: BUY @ 0.495 (FOK→GTC)
+[CLOB] 📤 V2 FOK BUY 2.00sh @ $0.49 = $0.98 pUSD
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"invalid amount for a marketable BUY order ($0.98), min size: $1"}
+[CLOB] ❌ FOK error: PolyApiException[status_code=400, error_message={'error': 'invalid amount for a marketable BUY order ($0.98), min size: $1'}]
+[CLOB] 📤 V2 GTC BUY 2.25sh @ $0.48 = $1.08 pUSD
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"order 0x5fb1168cc791ee27027fbc30645bf3f23acbcfcd5e0d0a45d22039eaf62b7e14 is invalid. Size (2.25) lower than the minimum: 5"}
+[CLOB] ❌ GTC fallback also failed: PolyApiException[status_code=400, error_message={'error': 'order 0x5fb1168cc791ee27027fbc30645bf3f23acbcfcd5e0d0a45d22039eaf62b7e14 is invalid. Size (2.25) lower than the minimum: 5'}]
+[12:38:46.208] [ERROR ]    ❌ Order placement FAILED: PolyApiException[status_code=400, error_message={'error': 'order 0x5fb1168cc791ee27027fbc30645bf3f23acbcfcd5e0d0a45d22039eaf62b7e14 is invalid. Size (2.25) lower than the minimum: 5'}]
+[12:38:46.208] [SCAN  ] Executed 1/3 signals
+[12:38:46.208] [INIT  ] CLOB Market WS connected + subscribed
+[12:38:48.198] [SCAN  ] Round #204 | ⚡GRIN 3.19 pUSD | W/L:0/4 (0%) | DD:14.1% | L4
+[12:38:48.329] [SCAN  ] Found 4 markets (1 coins x 1 TFs)
+[12:38:57.672] [INFO  ] 💾 State saved: 2 open, 1 pending
+[12:38:57.672] [TRADE ] ✅ FILL: BTC UP @ 0.265 (waited 16.0s, id=0xcfe04bfd)
+[12:38:59.722] [INFO  ] 💰 Balance refresh (pending_fill): 3.19 → 0.19 pUSD
+[12:38:59.725] [INFO  ] Resolved 1 pending order(s) this scan
+[12:38:59.728] [INFO  ] 💾 State saved: 2 open, 0 pending
+[12:38:59.728] [WARN  ] CLOB WS: 'list' object has no attribute 'get' — reconnect in 2s
+[12:39:17.850] [TRADE ] 🔚 Closing LIVE BTC UP — reason=loss_exit_before_close (-18.9%, 75s left)
+[12:39:18.418] [DEBUG ]    🗑️ Cancelled existing orders before exit
+[12:39:18.745] [TRADE ]    📤 EXIT [urgent_tier1_fok_best_bid] FOK SELL 7.50sh @ 0.370 (best_bid=0.370)
+[CLOB] 📤 V2 FOK SELL 7.00sh (own 7.50) @ $0.37 = $2.59
+[CLOB] ✅ SELL placed: id=0x5e01c257782b4bcc7f6be6e2cd48fbd13464279639b80e860990582db3462401 status=matched
+[12:39:19.763] [TRADE ]    ✅ Exit filled via urgent_tier1_fok_best_bid
+[12:39:20.052] [TRADE ]    ✅ Exit FILLED @ 0.215 via urgent_tier1_fok_best_bid (id=0x5e01c257782b4bcc7f6be6e2cd48fbd13464279639b80e860990582db3462401)
+[12:39:20.068] [INFO  ] 💾 State saved: 1 open, 0 pending
+[12:39:20.074] [TRADE ] ❌ EXIT: BTC UP PnL=-0.39pUSD (-18.9%) exit=0.215 reason=loss_exit_before_close (-18.9%, 75s left) strat=btc_volume_sniper
+[12:39:21.940] [INFO  ] 💰 Balance refresh (exit_fill): -0.20 → 2.66 pUSD
+[12:39:21.940] [INFO  ] 📤 Exit triggered: BTC UP — loss_exit_before_close (-18.9%, 75s left)
+[12:39:21.940] [INFO  ] 💾 State saved: 1 open, 0 pending
+[12:39:58.919] [TRADE ]    📤 FAST ORDER: BUY @ 0.495 (FOK→GTC)
+[CLOB] 📤 V2 FOK BUY 2.00sh @ $0.49 = $0.98 pUSD
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"invalid amount for a marketable BUY order ($0.98), min size: $1"}
+[CLOB] ❌ FOK error: PolyApiException[status_code=400, error_message={'error': 'invalid amount for a marketable BUY order ($0.98), min size: $1'}]
+[CLOB] 📤 V2 GTC BUY 2.09sh @ $0.48 = $1.00 pUSD
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"order 0xed122d765f536fa3188e76e7a3cc487414388450d06603d1b4d196aaa4ec5df8 is invalid. Size (2.09) lower than the minimum: 5"}
+[CLOB] ❌ GTC fallback also failed: PolyApiException[status_code=400, error_message={'error': 'order 0xed122d765f536fa3188e76e7a3cc487414388450d06603d1b4d196aaa4ec5df8 is invalid. Size (2.09) lower than the minimum: 5'}]
+[12:40:01.117] [ERROR ]    ❌ Order placement FAILED: PolyApiException[status_code=400, error_message={'error': 'order 0xed122d765f536fa3188e76e7a3cc487414388450d06603d1b4d196aaa4ec5df8 is invalid. Size (2.09) lower than
+[12:40:23.625] [TRADE ] 🎯 ENTRY [⚡GRIND] BTC UP [SINGLE] size=1.00pUSD @ 0.455 (FAST (FOK→GTC)) conf=78% agree=1 | btc_volume_sniper
+[12:40:23.629] [TRADE ]    Reason: [SINGLE:1/12 agree] BTC low-volume sniper: vol=$83 → 80% UP win rate (backtest n=1460). BUY UP @ 0.455
+[12:40:23.631] [TRADE ]    📤 FAST ORDER: BUY @ 0.455 (FOK→GTC)
+[CLOB] 📤 V2 FOK BUY 2.00sh @ $0.46 = $0.92 pUSD
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"invalid amount for a marketable BUY order ($0.92), min size: $1"}
+[CLOB] ❌ FOK error: PolyApiException[status_code=400, error_message={'error': 'invalid amount for a marketable BUY order ($0.92), min size: $1'}]
+[CLOB] 📤 V2 GTC BUY 2.23sh @ $0.45 = $1.00 pUSD
+[CLOB] ✅ Order placed: id=0x1b29adbd8dbdfcb73aa5c4ab636413c56aaed35c7e0551290cdb5a508a80a040 status=matched
+[CLOB] ✅ GTC filled immediately (maker) in 2712ms
+[12:40:26.343] [TRADE ]    📨 Order placed: id=0x1b29adbd8dbdfcb73aa5c4ab636413c56aaed35c7e0551290cdb5a508a80a040 status=MATCHED
+[12:40:26.670] [INFO  ] 💾 State saved: 2 open, 0 pending
+[12:40:26.672] [TRADE ]    ✅ FILLED immediately: 81cadb46 @ 0.455 TP=+15% SL=-11%
+[12:40:28.574] [INFO  ] 💰 Balance refresh (entry_fill): 2.66 → 1.69 pUSD
+[12:40:43.855] [TRADE ] 🔚 Closing LIVE BTC UP — reason=stop_loss (-17.6%, sl=-11%)
+[12:40:44.413] [DEBUG ]    🗑️ Cancelled existing orders before exit
+[12:40:44.745] [TRADE ]    📤 EXIT [urgent_tier1_fok_best_bid] FOK SELL 2.23sh @ 0.370 (best_bid=0.370)
+[CLOB] ⚠️ Sell order below min: 0.74 < 1.0. shares=2.00 @ 0.37
+[CLOB] ❌ Can't reach min (need 2.70sh, own 2.23sh)
+[12:40:44.747] [WARN  ]    ⚠️ urgent_tier1_fok_best_bid returned no result, trying next tier
+[12:40:45.073] [TRADE ]    📤 EXIT [urgent_tier2_gtc_5tick] GTC SELL 2.23sh @ 0.220 (best_bid=0.270)
+[CLOB] ⚠️ Sell order below min: 0.44 < 1.0. shares=2.00 @ 0.22
+[CLOB] ❌ Can't reach min (need 4.55sh, own 2.23sh)
+[12:41:57.519] [TRADE ]    📤 EXIT [urgent_tier5_panic_sell] GTC SELL 2.23sh @ 0.010 (best_bid=0.400)
+[CLOB] ⚠️ Sell order below min: 0.02 < 1.0. shares=2.00 @ 0.01
+[CLOB] ❌ Can't reach min (need 100.00sh, own 2.23sh)
+[12:41:57.519] [WARN  ]    ⚠️ urgent_tier5_panic_sell returned no result, trying next tier
+[12:41:57.525] [ERROR ]    ❌ All exit tiers failed. Position will rely on market resolution. last_error=None
+[12:41:57.527] [ERROR ]    Emergency exit: 8 attempts failed for BTC UP
+[12:41:57.528] [WARN  ] 🚨 Emergency exit for BTC UP
+[CLOB] ⚠️ Sell order below min: 0.68 < 1.0. shares=2.00 @ 0.34
+[CLOB] ❌ Can't reach min (need 2.94sh, own 2.23sh)
+[CLOB] ⚠️ Sell order below min: 0.02 < 1.0. shares=2.00 @ 0.01
+[CLOB] ❌ Can't reach min (need 100.00sh, own 2.23sh)
+[12:42:02.062] [SCAN  ] Found 4 markets (1 coins x 1 TFs)
+[12:42:02.074] [TRADE ] 🔚 Closing LIVE BTC UP — reason=stop_loss (-11.0%, sl=-11%)
+[12:42:03.088] [DEBUG ]    🗑️ Cancelled existing orders before exit
+[12:42:03.395] [TRADE ]    📤 EXIT [urgent_tier1_fok_best_bid] FOK SELL 2.23sh @ 0.460 (best_bid=0.460)
+[CLOB] ⚠️ Sell order below min: 0.92 < 1.0. shares=2.00 @ 0.46
+[CLOB] 📤 V2 FOK SELL 2.23sh (own 2.23) @ $0.46 = $1.03
+[CLOB] ✅ SELL placed: id=0xe9ad214b06e77e1cbcb2373e468f65ea13cf57c8bf419c96775ee953689592a5 status=matched
+[12:42:04.657] [TRADE ]    ✅ Exit filled via urgent_tier1_fok_best_bid
+[12:42:04.984] [TRADE ]    ✅ Exit FILLED @ 0.405 via urgent_tier1_fok_best_bid (id=0xe9ad214b06e77e1cbcb2373e468f65ea13cf57c8bf419c96775ee953689592a5)
+[12:42:04.989] [INFO  ] 💾 State saved: 1 open, 0 pending
+[12:42:04.997] [TRADE ] ❌ EXIT: BTC UP PnL=-0.11pUSD (-11.0%) exit=0.405 reason=stop_loss (-11.0%, sl=-11%) strat=btc_volume_sniper
+[12:42:06.977] [INFO  ] 💰 Balance refresh (exit_fill): 1.58 → 1.69 pUSD
+[12:42:06.981] [INFO  ] 📤 Exit triggered: BTC UP — stop_loss (-11.0%, sl=-11%)
+[12:42:06.984] [INFO  ] 💾 State saved: 1 open, 0 pending
+[12:42:06.984] [INFO  ] Closed 1 positions this scan
+[12:42:06.984] [INFO  ] 📊 BTC UP: PnL=+0.0%, TP=15%, SL=-11%, 791s left, peak=0.0%
+in between there  also many sizing error and selling error , fix all that , pnl ,position ,messages all rank , 
+
+real :
+buy : Bitcoin Up or Down - May 20, 8:50AM-8:55AM ET
+Up 51¢
+2.0 shares
+buy:Bitcoin Up or Down - May 20, 8:35AM-8:40AM ET
+Up 26¢
+7.5 shares
+sell:Bitcoin Up or Down - May 20, 8:35AM-8:40AM ET
+Up 37¢
+7.0 shares
+buy:Bitcoin Up or Down - May 20, 8:40AM-8:45AM ET
+Up 42¢
+2.2 shares
+sell :Bitcoin Up or Down - May 20, 8:40AM-8:45AM ET
+Up 46¢
+2.2 shares
+redeem : Bitcoin Up or Down - May 20, 8:30AM-8:35AM ET
+0.0 shares 
+sell: icon for Bitcoin Up or Down - May 20, 8:50AM-8:55AM ET
+Bitcoin Up or Down - May 20, 8:50AM-8:55AM ET
+Up 49¢
+2.0 shares
+
+final balance :3.62
+
+
+check all fix all , be best ,and one thing all only up signals no down signals why is it bias or poor nbactesting and building , currently the new account create on v2 version uses sig 3 , didn't you check on doc , also the log file recoprding beast log records all logs into one file , i dont need like
+
+
+
+
