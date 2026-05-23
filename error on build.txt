@@ -1,0 +1,352 @@
+error on build :
+Compiling polybot_rust v0.1.0 (C:\Users\acer\polybot_rust)
+warning: unused import: `warn`
+  --> src\data\clob.rs:17:21
+   |
+17 | use tracing::{info, warn};
+   |                     ^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `OrderResult`
+  --> src\trading\executor.rs:14:37
+   |
+14 | use crate::data::clob::{ClobClient, OrderResult};
+   |                                     ^^^^^^^^^^^
+
+warning: unused import: `tracing::info`
+ --> src\trading\risk.rs:7:5
+  |
+7 | use tracing::info;
+  |     ^^^^^^^^^^^^^
+
+warning: variable does not need to be mutable
+  --> src\data\ws.rs:50:24
+   |
+50 |     pub async fn start(mut self) -> Result<()> {
+   |                        ----^^^^
+   |                        |
+   |                        help: remove this `mut`
+   |
+   = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+
+warning: variable does not need to be mutable
+   --> src\trading\executor.rs:157:25
+    |
+157 |             if let Some(mut pos) = self.open_positions.remove(&id) {
+    |                         ----^^^
+    |                         |
+    |                         help: remove this `mut`
+
+warning: unused variable: `token_id`
+   --> src\data\clob.rs:129:9
+    |
+129 |         token_id: &str,
+    |         ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_token_id`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `token_id`
+   --> src\data\clob.rs:171:9
+    |
+171 |         token_id: &str,
+    |         ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_token_id`
+
+warning: unused variable: `token_id`
+   --> src\data\clob.rs:197:9
+    |
+197 |         token_id: &str,
+    |         ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_token_id`
+
+warning: unused variable: `second_token`
+  --> src\strategies\pair_arb.rs:72:36
+   |
+72 |     let (first_token, first_price, second_token, second_price, first_dir) =
+   |                                    ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_second_token`
+
+warning: unused variable: `second_price`
+  --> src\strategies\pair_arb.rs:72:50
+   |
+72 |     let (first_token, first_price, second_token, second_price, first_dir) =
+   |                                                  ^^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_second_price`
+
+warning: unused variable: `result`
+   --> src\trading\executor.rs:160:24
+    |
+160 |                     Ok(result) => {
+    |                        ^^^^^^ help: if this is intentional, prefix it with an underscore: `_result`
+
+warning: variable does not need to be mutable
+  --> src\main.rs:64:9
+   |
+64 |     let mut depeg_guard = DePegGuard::new();
+   |         ----^^^^^^^^^^^
+   |         |
+   |         help: remove this `mut`
+
+warning: unused variable: `ws_prices`
+  --> src\main.rs:72:9
+   |
+72 |     let ws_prices = ws.prices.clone();
+   |         ^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_ws_prices`
+
+warning: multiple fields are never read
+  --> src\config.rs:10:9
+   |
+ 8 | pub struct Config {
+   |            ------ fields in this struct
+ 9 |     pub trading_mode: String,       // "live" or "paper"
+10 |     pub private_key: String,
+   |         ^^^^^^^^^^^
+11 |     pub proxy_wallet: String,
+   |         ^^^^^^^^^^^^
+12 |     pub signature_type: u8,         // 3 for V2 accounts
+13 |     pub api_key: Option<String>,
+   |         ^^^^^^^
+14 |     pub api_secret: Option<String>,
+   |         ^^^^^^^^^^
+15 |     pub passphrase: Option<String>,
+   |         ^^^^^^^^^^
+...
+19 |     pub min_order_size: f64,        // $1.00 for FOK
+   |         ^^^^^^^^^^^^^^
+20 |     pub clob_url: String,
+21 |     pub gamma_url: String,
+   |         ^^^^^^^^^
+22 |     pub chain_id: u64,
+   |         ^^^^^^^^
+   |
+   = note: `Config` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: method `is_live` is never used
+  --> src\config.rs:61:12
+   |
+25 | impl Config {
+   | ----------- method in this implementation
+...
+61 |     pub fn is_live(&self) -> bool {
+   |            ^^^^^^^
+
+warning: field `token_id` is never read
+  --> src\data\clob.rs:32:9
+   |
+31 | pub struct Orderbook {
+   |            --------- field in this struct
+32 |     pub token_id: String,
+   |         ^^^^^^^^
+   |
+   = note: `Orderbook` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: method `get_mid_price` is never used
+   --> src\data\clob.rs:113:18
+    |
+ 48 | impl ClobClient {
+    | --------------- method in this implementation
+...
+113 |     pub async fn get_mid_price(&self, token_id: &str) -> Result<f64> {
+    |                  ^^^^^^^^^^^^^
+
+warning: fields `coin`, `bid`, `ask`, `mid`, and `timestamp` are never read
+  --> src\data\ws.rs:21:9
+   |
+20 | pub struct PriceTick {
+   |            --------- fields in this struct
+21 |     pub coin: String,
+   |         ^^^^
+22 |     pub bid: f64,
+   |         ^^^
+23 |     pub ask: f64,
+   |         ^^^
+24 |     pub mid: f64,
+   |         ^^^
+25 |     pub timestamp: f64,
+   |         ^^^^^^^^^
+   |
+   = note: `PriceTick` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: fields `valid_ticks` and `warmup_complete` are never read
+  --> src\data\ws.rs:35:5
+   |
+31 | pub struct WsManager {
+   |            --------- fields in this struct
+...
+35 |     valid_ticks: HashMap<String, u32>,
+   |     ^^^^^^^^^^^
+36 |     warmup_complete: HashMap<String, bool>,
+   |     ^^^^^^^^^^^^^^^
+
+warning: methods `is_warmed_up` and `get_price` are never used
+  --> src\data\ws.rs:64:12
+   |
+39 | impl WsManager {
+   | -------------- methods in this implementation
+...
+64 |     pub fn is_warmed_up(&self, coin: &str) -> bool {
+   |            ^^^^^^^^^^^^
+...
+69 |     pub async fn get_price(&self, coin: &str) -> Option<f64> {
+   |                  ^^^^^^^^^
+
+warning: fields `rationale`, `agreement_count`, and `conviction_tier` are never read
+  --> src\strategies\mod.rs:35:9
+   |
+26 | pub struct Signal {
+   |            ------ fields in this struct
+...
+35 |     pub rationale: String,
+   |         ^^^^^^^^^
+36 |     pub agreement_count: u32,
+   |         ^^^^^^^^^^^^^^^
+37 |     pub conviction_tier: String,
+   |         ^^^^^^^^^^^^^^^
+   |
+   = note: `Signal` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: constant `MIN_PROFIT_BPS` is never used
+  --> src\strategies\pair_arb.rs:28:7
+   |
+28 | const MIN_PROFIT_BPS: f64 = 400.0; // 4% minimum (covers 3.125% fee + 0.875% profit)
+   |       ^^^^^^^^^^^^^^
+
+warning: constant `MIN_CONSECUTIVE_TICKS` is never used
+  --> src\strategies\tick_momentum.rs:32:7
+   |
+32 | const MIN_CONSECUTIVE_TICKS: u32 = 3;
+   |       ^^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `MIN_TICK_MOVE` is never used
+  --> src\strategies\tick_momentum.rs:35:7
+   |
+35 | const MIN_TICK_MOVE: f64 = 0.005;
+   |       ^^^^^^^^^^^^^
+
+warning: constant `MIN_TOTAL_MOVE_PCT` is never used
+  --> src\strategies\tick_momentum.rs:38:7
+   |
+38 | const MIN_TOTAL_MOVE_PCT: f64 = 1.0;
+   |       ^^^^^^^^^^^^^^^^^^
+
+warning: fields `strategy`, `size_pusd`, `peak_pnl_pct`, and `market_close_time` are never read
+  --> src\trading\executor.rs:25:9
+   |
+19 | pub struct Position {
+   |            -------- fields in this struct
+...
+25 |     pub strategy: String,
+   |         ^^^^^^^^
+...
+29 |     pub size_pusd: f64,
+   |         ^^^^^^^^^
+...
+33 |     pub peak_pnl_pct: f64,
+   |         ^^^^^^^^^^^^
+34 |     pub opened_at: Instant,
+35 |     pub market_close_time: f64,
+   |         ^^^^^^^^^^^^^^^^^
+   |
+   = note: `Position` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: method `update_price` is never used
+  --> src\trading\executor.rs:39:12
+   |
+38 | impl Position {
+   | ------------- method in this implementation
+39 |     pub fn update_price(&mut self, price: f64) {
+   |            ^^^^^^^^^^^^
+
+warning: field `closed_trades` is never read
+  --> src\trading\executor.rs:67:9
+   |
+65 | pub struct Executor {
+   |            -------- field in this struct
+66 |     pub open_positions: HashMap<String, Position>,
+67 |     pub closed_trades: Vec<Position>,
+   |         ^^^^^^^^^^^^^
+
+warning: fields `name`, `max_balance`, `min_agreement`, and `max_positions` are never read
+  --> src\trading\risk.rs:11:9
+   |
+10 | pub struct Tier {
+   |            ---- fields in this struct
+11 |     pub name: &'static str,
+   |         ^^^^
+12 |     pub min_balance: f64,
+13 |     pub max_balance: f64,
+   |         ^^^^^^^^^^^
+14 |     pub min_confidence: f64,
+15 |     pub min_agreement: u32,
+   |         ^^^^^^^^^^^^^
+16 |     pub max_positions: u32,
+   |         ^^^^^^^^^^^^^
+   |
+   = note: `Tier` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+
+warning: fields `peak_balance`, `total_pnl`, `wins`, `losses`, and `open_positions` are never read
+  --> src\trading\risk.rs:41:9
+   |
+39 | pub struct RiskManager {
+   |            ----------- fields in this struct
+40 |     pub balance: f64,
+41 |     pub peak_balance: f64,
+   |         ^^^^^^^^^^^^
+42 |     pub total_pnl: f64,
+   |         ^^^^^^^^^
+43 |     pub wins: u32,
+   |         ^^^^
+44 |     pub losses: u32,
+   |         ^^^^^^
+45 |     pub open_positions: u32,
+   |         ^^^^^^^^^^^^^^
+
+warning: methods `can_trade` and `drawdown_pct` are never used
+  --> src\trading\risk.rs:79:12
+   |
+48 | impl RiskManager {
+   | ---------------- methods in this implementation
+...
+79 |     pub fn can_trade(&self, confidence: f64, agreement: u32) -> bool {
+   |            ^^^^^^^^^
+...
+87 |     pub fn drawdown_pct(&self) -> f64 {
+   |            ^^^^^^^^^^^^
+
+warning: fields `binance_price`, `coinbase_price`, and `last_check` are never read
+  --> src\trading\guards.rs:19:9
+   |
+18 | pub struct DePegGuard {
+   |            ---------- fields in this struct
+19 |     pub binance_price: f64,
+   |         ^^^^^^^^^^^^^
+20 |     pub coinbase_price: f64,
+   |         ^^^^^^^^^^^^^^
+...
+24 |     pub last_check: Instant,
+   |         ^^^^^^^^^^
+
+warning: method `update` is never used
+  --> src\trading\guards.rs:40:12
+   |
+27 | impl DePegGuard {
+   | --------------- method in this implementation
+...
+40 |     pub fn update(&mut self, binance: f64, coinbase: f64) {
+   |            ^^^^^^
+
+warning: field `mismatches_found` is never read
+   --> src\trading\guards.rs:152:9
+    |
+149 | pub struct DriftReconciler {
+    |            --------------- field in this struct
+...
+152 |     pub mismatches_found: u64,
+    |         ^^^^^^^^^^^^^^^^
+
+warning: method `record_mismatch` is never used
+   --> src\trading\guards.rs:176:12
+    |
+155 | impl DriftReconciler {
+    | -------------------- method in this implementation
+...
+176 |     pub fn record_mismatch(&mut self) {
+    |            ^^^^^^^^^^^^^^^
