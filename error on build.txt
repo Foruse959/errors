@@ -350,3 +350,6 @@ warning: method `record_mismatch` is never used
 ...
 176 |     pub fn record_mismatch(&mut self) {
     |            ^^^^^^^^^^^^^^^
+
+warning: `polybot_rust` (bin "polybot_rust") generated 35 warnings (run `cargo fix --bin "polybot_rust" -p polybot_rust` to apply 13 suggestions)
+    Finished `release` profile [optimized] target(s) in 5m 26s
