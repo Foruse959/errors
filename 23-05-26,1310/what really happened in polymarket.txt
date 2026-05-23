@@ -1,0 +1,50 @@
+what really happened in polymarket :
+Buy for Bitcoin Up or Down - May 23, 3:35AM-3:40AM ET
+Bitcoin Up or Down - May 23, 3:35AM-3:40AM ET
+Down 31¢
+4.5 shares
+$1.46
+9m ago
+
+Sell for Bitcoin Up or Down - May 23, 3:30AM-3:35AM ET
+Bitcoin Up or Down - May 23, 3:30AM-3:35AM ET
+Up 13¢
+8.0 shares
+$0.98
+10m ago
+
+Buy for Bitcoin Up or Down - May 23, 3:30AM-3:35AM ET
+Bitcoin Up or Down - May 23, 3:30AM-3:35AM ET
+Up 12¢
+5.7 shares
+$0.68
+
+11m ago
+Buy for Bitcoin Up or Down - May 23, 3:30AM-3:35AM ET
+Bitcoin Up or Down - May 23, 3:30AM-3:35AM ET
+Up 12¢
+2.7 shares
+$0.32
+
+11m ago
+Sell for Bitcoin Up or Down - May 23, 3:30AM-3:35AM ET
+Bitcoin Up or Down - May 23, 3:30AM-3:35AM ET
+Up 11¢
+12.0 shares
+$1.24
+
+11m ago
+Buy for Bitcoin Up or Down - May 23, 3:30AM-3:35AM ET
+Bitcoin Up or Down - May 23, 3:30AM-3:35AM ET
+Up 9¢
+12.0 shares
+$1.15
+
+11m ago
+
+
+loss above 1 dollor , find why is this happening ,is it speed error ,execution error , we need to optimise or speed up we are losing more moneyn,do proper research ,backtest download the 145 mb parse file and make the bot better . resolution of market it entered :
+
+Bitcoin Up or Down - May 23, 3:30AM-3:35AM ET   - outcome down 
+
+Bitcoin Up or Down - May 23, 3:35AM-3:40AM ET - outcome up 
