@@ -1,0 +1,640 @@
+[17:57:15.980] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:57:15.980] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:57:15.980] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:57:15.980] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.079 | maker_edge
+[17:57:15.980] [TRADE ] 🎯 ENTRY [⚡GRIND] BTC SELL_UP [MEDIUM] size=1.98pUSD @ 0.079 (GTC-FIRST (maker 0% fee)) conf=78% agree=2 | maker_edge
+[17:57:15.980] [TRADE ]    Reason: [MEDIUM:2/15 agree] Maker edge: Sell YES at 0.079 (mid: 0.075, edge: 533 bps). Longshot overpricing exploitation.
+[17:57:15.980] [TRADE ]    📤 GTC-FIRST: BUY @ 0.079 (maker, 0% fee)
+[CLOB] 📤 V2 GTC BUY 24.75sh @ $0.08 = $1.98 pUSD
+[CLOB] ✅ Order placed: id=0x1a60ac823d119260226b1b100c3ec1aa98ef2a4285d215d8698da453636ce543 status=live
+[17:57:17.399] [TRADE ]    📨 Order placed: id=0x1a60ac823d119260226b1b100c3ec1aa98ef2a4285d215d8698da453636ce543 status=LIVE
+[17:57:17.403] [INFO  ] 💾 State saved: 0 open, 1 pending
+[17:57:17.404] [TRADE ]    ⏳ Order on book (not filled): 0x1a60ac823d119260226b1b100c3ec1aa98ef2a4285d215d8698da453636ce543 — tracking for up to 30s
+💰 Auto-redeem: Bitcoin Up or Down - May 25, 1:30PM-1:35PM ET... (55.56 tokens, neg_risk=False)
+  ❌ EOA redeem error: {'code': -32000, 'message': 'insufficient funds for gas * price + value: balance 0, tx cost 115190499701200000, overshot 115190499701200000'}
+⚠️ Redeem failed: 0xcc426d46c1d257...
+[17:57:19.543] [SCAN  ] Round #3 | ⚡GRIN 3.18 pUSD | W/L:0/0 (0%) | DD:-5.9% | L0
+[17:57:19.543] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:57:20.215] [DEBUG ] Prefetched 2 token orderbooks (scan #3)
+[17:57:20.229] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:57:20.229] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:57:20.232] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:57:20.232] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.089 | maker_edge
+[17:57:20.234] [TRADE ] 🎯 ENTRY [⚡GRIND] BTC SELL_UP [MEDIUM] size=1.98pUSD @ 0.089 (GTC-FIRST (maker 0% fee)) conf=78% agree=2 | maker_edge
+[17:57:20.234] [TRADE ]    Reason: [MEDIUM:2/15 agree] Maker edge: Sell YES at 0.089 (mid: 0.085, edge: 471 bps). Longshot overpricing exploitation.
+[17:57:20.234] [TRADE ]    📤 GTC-FIRST: BUY @ 0.089 (maker, 0% fee)
+[CLOB] 📤 V2 GTC BUY 22.00sh @ $0.09 = $1.98 pUSD
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 3178402, sum of matched orders: 1980000, order amount (inc. fees): 2106120"}
+[CLOB] ❌ Limit order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 3178402, sum of matched orders: 1980000, order amount (inc. fees): 2106120'}]
+[17:57:20.647] [ERROR ]    ❌ Order placement FAILED: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 3178402, sum of matched orders: 1980000, order amount (inc. fees): 2106120'}]
+[17:57:21.651] [SCAN  ] Round #4 | ⚡GRIN 3.18 pUSD | W/L:0/0 (0%) | DD:-5.9% | L0
+[17:57:21.651] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:57:22.371] [INFO  ] 💾 State saved: 1 open, 1 pending
+[17:57:22.376] [TRADE ] ✅ FILL: BTC SELL_UP @ 0.079 (waited 5.0s, id=0x1a60ac82)
+[CLOB] All 5 RPC endpoints failed within 3s budget
+[17:57:34.424] [INFO  ] Resolved 1 pending order(s) this scan
+[17:57:34.424] [TRADE ] 🔚 Closing LIVE BTC SELL_UP — reason=stop_loss (-100.0%, sl=-10%)
+[17:57:35.088] [DEBUG ]    🗑️ Cancelled existing orders before exit
+[17:57:35.092] [TRADE ]    📤 EXIT [urgent_tier1_fok_best_bid] FOK SELL 24.75sh @ 0.010 (best_bid=0.010)
+[CLOB] ⚠️ Sell order below min: 0.24 < 1.0. shares=24.00 @ 0.01
+[CLOB] ✅ Bumped sell price to $0.05 (24.60sh = $1.23) to meet min
+[CLOB] 📤 V2 FOK SELL 24.60sh (own 24.75) @ $0.05 = $1.23
+[CLOB] ✅ SELL placed: id=0xd77cd43bdb134abb259061c7a68fd64c1a3bcbd545c4ca967b651103ab141c8b status=matched
+[17:57:35.846] [TRADE ]    ✅ Exit filled via urgent_tier1_fok_best_bid
+[17:57:36.182] [TRADE ]    ✅ Exit FILLED @ 0.500 via urgent_tier1_fok_best_bid (id=0xd77cd43bdb134abb259061c7a68fd64c1a3bcbd545c4ca967b651103ab141c8b)
+[17:57:36.201] [INFO  ] 💾 State saved: 0 open, 0 pending
+[17:57:36.208] [TRADE ] ❌ EXIT: BTC SELL_UP PnL=-1.98pUSD (-100.0%) exit=0.500 reason=stop_loss (-100.0%, sl=-10%) strat=maker_edge
+[CLOB] All 5 RPC endpoints failed within 3s budget
+[17:57:48.255] [INFO  ] 📤 Exit triggered: BTC SELL_UP — stop_loss (-100.0%, sl=-10%)
+[17:57:48.259] [INFO  ] Closed 1 positions this scan
+💰 Auto-redeem: Bitcoin Up or Down - May 23, 5:05AM-5:10AM ET... (5.56 tokens, neg_risk=False)
+  ❌ EOA redeem error: {'code': -32000, 'message': 'insufficient funds for gas * price + value: balance 0, tx cost 111829156708000000, overshot 111829156708000000'}
+⚠️ Redeem failed: 0x2dd4ae4089c521...
+  ⛔ Stopping redeem batch after 3 failures (prevents tx queue buildup)
+[17:57:50.415] [DEBUG ] Prefetched 2 token orderbooks (scan #4)
+[17:57:50.751] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:57:50.751] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:57:50.761] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:57:50.761] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.059 | maker_edge
+[17:57:50.763] [WARN  ] CLOB WS: no close frame received or sent — reconnect in 2s
+[17:57:51.769] [SCAN  ] Round #5 | ⚡GRIN 1.20 pUSD | W/L:0/1 (0%) | DD:60.1% | L1
+[17:57:51.772] [WARN  ] ⚠️ DAILY LOSS: -66.0% — sizing reduced, trading continues
+[17:57:51.774] [WARN  ] ⚠️ DRAWDOWN: 60.1% — growth mode, sizing reduced
+[17:57:51.923] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:57:52.278] [DEBUG ] Prefetched 2 token orderbooks (scan #5)
+[17:57:52.286] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:57:52.286] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:57:52.286] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:57:52.286] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.059 | maker_edge
+[17:57:53.301] [SCAN  ] Round #6 | ⚡GRIN 1.20 pUSD | W/L:0/1 (0%) | DD:60.1% | L1
+[17:57:53.301] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:57:53.301] [DEBUG ] Prefetched 2 token orderbooks (scan #6)
+[17:57:53.305] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:57:53.305] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:57:53.305] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:57:53.305] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.059 | maker_edge
+[17:57:53.700] [INIT  ] CLOB Market WS connected + subscribed
+[17:57:54.319] [SCAN  ] Round #7 | ⚡GRIN 1.20 pUSD | W/L:0/1 (0%) | DD:60.1% | L1
+[17:57:54.323] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:57:54.662] [DEBUG ] Prefetched 2 token orderbooks (scan #7)
+[17:57:54.662] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:57:54.670] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:57:54.670] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:57:54.673] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.059 | maker_edge
+[17:57:55.680] [SCAN  ] Round #8 | ⚡GRIN 1.20 pUSD | W/L:0/1 (0%) | DD:60.1% | L1
+[17:57:55.680] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:57:55.680] [DEBUG ] Prefetched 2 token orderbooks (scan #8)
+[17:57:55.689] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:57:55.689] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:57:55.689] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:57:55.691] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.059 | maker_edge
+[17:57:56.698] [SCAN  ] Round #9 | ⚡GRIN 1.20 pUSD | W/L:0/1 (0%) | DD:60.1% | L1
+[17:57:56.698] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:57:57.040] [DEBUG ] Prefetched 2 token orderbooks (scan #9)
+[17:57:57.044] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:57:57.044] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:57:57.044] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:57:57.053] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.079 | maker_edge
+[17:57:58.063] [SCAN  ] Round #10 | ⚡GRIN 1.20 pUSD | W/L:0/1 (0%) | DD:60.1% | L1
+[17:57:58.065] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:57:58.067] [DEBUG ] Prefetched 2 token orderbooks (scan #10)
+[17:57:58.067] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:57:58.067] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:57:58.067] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:57:58.067] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.079 | maker_edge
+[17:57:59.068] [SCAN  ] Round #11 | ⚡GRIN 1.20 pUSD | W/L:0/1 (0%) | DD:60.1% | L1
+[17:57:59.068] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:57:59.410] [DEBUG ] Prefetched 2 token orderbooks (scan #11)
+[17:57:59.414] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:57:59.414] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:57:59.416] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:57:59.416] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.079 | maker_edge
+[17:58:00.411] [SCAN  ] Round #12 | ⚡GRIN 1.20 pUSD | W/L:0/1 (0%) | DD:60.1% | L1
+[17:58:00.411] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:58:00.417] [DEBUG ] Prefetched 2 token orderbooks (scan #12)
+[17:58:00.417] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:58:00.417] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:58:00.417] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:58:00.417] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.079 | maker_edge
+[17:58:01.433] [SCAN  ] Round #13 | ⚡GRIN 1.20 pUSD | W/L:0/1 (0%) | DD:60.1% | L1
+[17:58:01.433] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:58:01.865] [DEBUG ] Prefetched 2 token orderbooks (scan #13)
+[17:58:01.878] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:58:01.880] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:58:01.880] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:58:01.880] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.069 | maker_edge
+[17:58:02.887] [SCAN  ] Round #14 | ⚡GRIN 1.20 pUSD | W/L:0/1 (0%) | DD:60.1% | L1
+[17:58:03.044] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:58:03.044] [DEBUG ] Prefetched 2 token orderbooks (scan #14)
+[17:58:03.049] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:58:03.049] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:58:03.049] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:58:03.055] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.069 | maker_edge
+[17:58:04.051] [SCAN  ] Round #15 | ⚡GRIN 1.20 pUSD | W/L:0/1 (0%) | DD:60.1% | L1
+[17:58:04.051] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:58:04.403] [DEBUG ] Prefetched 2 token orderbooks (scan #15)
+[17:58:04.403] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:58:04.410] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:58:04.410] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:58:04.412] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.079 | maker_edge
+[17:58:05.412] [SCAN  ] Round #16 | ⚡GRIN 1.20 pUSD | W/L:0/1 (0%) | DD:60.1% | L1
+[17:58:06.419] [DEBUG ] CLOB balance sync: 2.81 pUSD
+[CLOB] All 5 RPC endpoints failed within 3s budget
+[17:58:19.964] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:58:20.308] [DEBUG ] Prefetched 2 token orderbooks (scan #16)
+[17:58:20.308] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:58:20.316] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:58:20.316] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:58:20.316] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.099 | maker_edge
+[17:58:21.323] [SCAN  ] Round #17 | ⚡GRIN 2.81 pUSD | W/L:0/1 (0%) | DD:6.4% | L1
+[17:58:21.325] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:58:21.325] [DEBUG ] Prefetched 2 token orderbooks (scan #17)
+[17:58:21.660] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:58:21.676] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:58:21.676] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:58:21.680] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.099 | maker_edge
+[17:58:21.680] [TRADE ] 🎯 ENTRY [⚡GRIND] BTC SELL_UP [MEDIUM] size=1.75pUSD @ 0.099 (GTC-FIRST (maker 0% fee)) conf=78% agree=2 | maker_edge
+[17:58:21.680] [TRADE ]    Reason: [MEDIUM:2/15 agree] Maker edge: Sell YES at 0.099 (mid: 0.095, edge: 421 bps). Longshot overpricing exploitation.
+[17:58:21.686] [TRADE ]    📤 GTC-FIRST: BUY @ 0.099 (maker, 0% fee)
+[CLOB] 📤 V2 GTC BUY 17.50sh @ $0.10 = $1.75 pUSD
+[CLOB] ✅ Order placed: id=0x90a838741a793c539cf30aeb46afa9302ac6fe7ad7419a81a4c6870e8d0cbebf status=matched
+[17:58:22.541] [TRADE ]    📨 Order placed: id=0x90a838741a793c539cf30aeb46afa9302ac6fe7ad7419a81a4c6870e8d0cbebf status=MATCHED
+[17:58:22.849] [INFO  ] 💾 State saved: 1 open, 0 pending
+[17:58:22.850] [TRADE ]    ✅ FILLED immediately: 746f0c63 @ 0.100 TP=+17% SL=-8%
+[CLOB] All 5 RPC endpoints failed within 3s budget
+[17:58:34.901] [INFO  ] Executed BTC SELL_UP
+[17:58:34.904] [SCAN  ] Executed 1/1 signals
+[17:58:35.911] [SCAN  ] Round #18 | ⚡GRIN 2.81 pUSD | W/L:0/1 (0%) | DD:6.4% | L1
+[17:58:36.065] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:58:36.065] [TRADE ] 🔚 Closing LIVE BTC SELL_UP — reason=loss_exit_before_close (-100.0%, 85s left)
+[17:58:36.787] [DEBUG ]    🗑️ Cancelled existing orders before exit
+[17:58:36.789] [TRADE ]    📤 EXIT [urgent_tier1_fok_best_bid] FOK SELL 17.50sh @ 0.010 (best_bid=0.010)
+[CLOB] ⚠️ Sell order below min: 0.17 < 1.0. shares=17.00 @ 0.01
+[CLOB] ✅ Bumped sell price to $0.06 (17.50sh = $1.05) to meet min
+[CLOB] 📤 V2 FOK SELL 17.50sh (own 17.50) @ $0.06 = $1.05
+[CLOB] ✅ SELL placed: id=0x2da205afad108fc47f47bbbd45547ad3a25f6fce45217257ad94ed5aba829abf status=matched
+[17:58:37.487] [TRADE ]    ✅ Exit filled via urgent_tier1_fok_best_bid
+[17:58:37.825] [TRADE ]    ✅ Exit FILLED @ 0.500 via urgent_tier1_fok_best_bid (id=0x2da205afad108fc47f47bbbd45547ad3a25f6fce45217257ad94ed5aba829abf)
+[17:58:37.828] [INFO  ] 💾 State saved: 0 open, 0 pending
+[17:58:37.833] [TRADE ] ❌ EXIT: BTC SELL_UP PnL=-1.75pUSD (-100.0%) exit=0.500 reason=loss_exit_before_close (-100.0%, 85s left) strat=maker_edge
+[CLOB] All 5 RPC endpoints failed within 3s budget
+[17:58:49.915] [INFO  ] 📤 Exit triggered: BTC SELL_UP — loss_exit_before_close (-100.0%, 85s left)
+[17:58:49.917] [INFO  ] Closed 1 positions this scan
+[17:58:50.253] [DEBUG ] Prefetched 2 token orderbooks (scan #18)
+[17:58:50.270] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:58:50.270] [SIGNAL]   BTC SELL_UP @ 78% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:58:50.270] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:58:50.274] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 78% @ 0.169 | maker_edge
+[17:58:50.274] [TRADE ] 🎯 ENTRY [⚡GRIND] BTC SELL_UP [MEDIUM] size=1.00pUSD @ 0.169 (GTC-FIRST (maker 0% fee)) conf=78% agree=2 | maker_edge
+[17:58:50.274] [TRADE ]    Reason: [MEDIUM:2/15 agree] Maker edge: Sell YES at 0.169 (mid: 0.165, edge: 242 bps). Longshot overpricing exploitation.
+[17:58:50.276] [TRADE ]    📤 GTC-FIRST: BUY @ 0.169 (maker, 0% fee)
+[CLOB] 📤 V2 GTC BUY 5.89sh @ $0.17 = $1.00 pUSD
+[CLOB] ✅ Order placed: id=0x19c228d6a42394d5bf19bed479fef755dad4d1f644207c845d87b9029550e9c4 status=matched
+[17:58:51.193] [TRADE ]    📨 Order placed: id=0x19c228d6a42394d5bf19bed479fef755dad4d1f644207c845d87b9029550e9c4 status=MATCHED
+[17:58:51.544] [INFO  ] 💾 State saved: 1 open, 0 pending
+[17:58:51.544] [TRADE ]    ✅ FILLED immediately: c1bff993 @ 0.170 TP=+12% SL=-7%
+[CLOB] All 5 RPC endpoints failed within 3s budget
+[17:59:03.610] [INFO  ] Executed BTC SELL_UP
+[17:59:03.613] [SCAN  ] Executed 1/1 signals
+[17:59:04.605] [SCAN  ] Round #19 | ⚡GRIN 1.06 pUSD | W/L:0/2 (0%) | DD:64.7% | L2
+[17:59:04.767] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:59:04.769] [TRADE ] 🔚 Closing LIVE BTC SELL_UP — reason=loss_exit_before_close (-100.0%, 71s left)
+[17:59:05.369] [DEBUG ]    🗑️ Cancelled existing orders before exit
+[17:59:05.379] [TRADE ]    📤 EXIT [urgent_tier1_fok_best_bid] FOK SELL 5.89sh @ 0.010 (best_bid=0.010)
+[CLOB] ⚠️ Sell order below min: 0.05 < 1.0. shares=5.00 @ 0.01
+[CLOB] 📤 V2 FOK SELL 5.89sh (own 5.89) @ $0.17 = $1.00
+[CLOB] ✅ SELL placed: id=0x5df525584c28e36ff1980a23a7bd158c9de223547bfeb6a62106939553cb7c74 status=matched
+[17:59:06.009] [TRADE ]    ✅ Exit filled via urgent_tier1_fok_best_bid
+[17:59:06.356] [TRADE ]    ✅ Exit FILLED @ 0.500 via urgent_tier1_fok_best_bid (id=0x5df525584c28e36ff1980a23a7bd158c9de223547bfeb6a62106939553cb7c74)
+[17:59:06.368] [INFO  ] 💾 State saved: 0 open, 0 pending
+[17:59:06.379] [TRADE ] ❌ EXIT: BTC SELL_UP PnL=-1.00pUSD (-100.0%) exit=0.500 reason=loss_exit_before_close (-100.0%, 71s left) strat=maker_edge
+[CLOB] All 5 RPC endpoints failed within 3s budget
+[17:59:17.626] [INFO  ] 📤 Exit triggered: BTC SELL_UP — loss_exit_before_close (-100.0%, 71s left)
+[17:59:17.627] [INFO  ] Closed 1 positions this scan
+  📋 Found 8 positions (7 redeemable)
+💰 Auto-redeem: Bitcoin Up or Down - May 25, 10:05AM-10:10AM ET... (163.00 tokens, neg_risk=False)
+  ❌ EOA redeem error: {'code': -32000, 'message': 'insufficient funds for gas * price + value: balance 0, tx cost 111990150857600000, overshot 111990150857600000'}
+⚠️ Redeem failed: 0xe723f4663ffab2...
+[17:59:23.303] [DEBUG ] Prefetched 2 token orderbooks (scan #19)
+[17:59:23.474] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:59:23.479] [SIGNAL]   BTC SELL_UP @ 75% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:59:23.481] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:59:23.481] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 75% @ 0.089 | maker_edge
+[17:59:23.485] [RISK  ] ⛔ BLOCKED: BTC SELL_UP — 💀 Balance too low (0.06 < 1.0 pUSD)
+[17:59:23.487] [WARN  ] CLOB WS: no close frame received or sent — reconnect in 2s
+[17:59:24.489] [SCAN  ] Round #20 | ⚡GRIN 0.06 pUSD | W/L:0/3 (0%) | DD:98.1% | L3
+[17:59:25.496] [DEBUG ] CLOB balance sync: 4.31 pUSD
+[CLOB] All 5 RPC endpoints failed within 3s budget
+[17:59:38.110] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+💰 Auto-redeem: Bitcoin Up or Down - May 25, 1:30PM-1:35PM ET... (55.56 tokens, neg_risk=False)
+  ❌ EOA redeem error: {'code': -32000, 'message': 'insufficient funds for gas * price + value: balance 0, tx cost 113288249508800000, overshot 113288249508800000'}
+⚠️ Redeem failed: 0xcc426d46c1d257...
+[17:59:40.213] [DEBUG ] Prefetched 2 token orderbooks (scan #20)
+[17:59:40.214] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[17:59:40.216] [SIGNAL]   BTC SELL_UP @ 75% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[17:59:40.218] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[17:59:40.218] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 75% @ 0.109 | maker_edge
+[17:59:40.223] [TRADE ] 🎯 ENTRY [⚡GRIND] BTC SELL_UP [MEDIUM] size=1.85pUSD @ 0.109 (GTC-FIRST (maker 0% fee)) conf=75% agree=2 | maker_edge
+[17:59:40.224] [TRADE ]    Reason: [MEDIUM:2/15 agree] Maker edge: Sell YES at 0.109 (mid: 0.105, edge: 381 bps). Longshot overpricing exploitation.
+[17:59:40.225] [TRADE ]    📤 GTC-FIRST: BUY @ 0.109 (maker, 0% fee)
+[CLOB] 📤 V2 GTC BUY 16.00sh @ $0.11 = $1.76 pUSD
+[CLOB] ✅ Order placed: id=0xfe8efcd40c527c1457d2454967873039cf27263d954b18abcf1a3abd5121879a status=live
+[17:59:41.053] [TRADE ]    📨 Order placed: id=0xfe8efcd40c527c1457d2454967873039cf27263d954b18abcf1a3abd5121879a status=LIVE
+[17:59:41.059] [INFO  ] 💾 State saved: 0 open, 1 pending
+[17:59:41.060] [TRADE ]    ⏳ Order on book (not filled): 0xfe8efcd40c527c1457d2454967873039cf27263d954b18abcf1a3abd5121879a — tracking for up to 30s
+[17:59:41.131] [INIT  ] CLOB Market WS connected + subscribed
+[17:59:42.044] [SCAN  ] Round #21 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[17:59:42.047] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:59:42.739] [DEBUG ] Prefetched 2 token orderbooks (scan #21)
+[17:59:42.743] [DEBUG ] Strategies: tried=15 fired=0 errors={}
+[17:59:42.744] [SCAN  ] No signals above 58% (tier GRIND) this scan
+[17:59:43.747] [SCAN  ] Round #22 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[17:59:43.749] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:59:44.057] [DEBUG ] Prefetched 2 token orderbooks (scan #22)
+[17:59:44.064] [DEBUG ] Strategies: tried=15 fired=0 errors={}
+[17:59:44.066] [SCAN  ] No signals above 58% (tier GRIND) this scan
+[17:59:45.067] [SCAN  ] Round #23 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[17:59:45.068] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+💰 Auto-redeem: Bitcoin Up or Down - May 23, 5:05AM-5:10AM ET... (5.56 tokens, neg_risk=False)
+  ❌ EOA redeem error: {'code': -32000, 'message': 'insufficient funds for gas * price + value: balance 0, tx cost 113546392031200000, overshot 113546392031200000'}
+⚠️ Redeem failed: 0x2dd4ae4089c521...
+  ⛔ Stopping redeem batch after 3 failures (prevents tx queue buildup)
+[17:59:47.509] [DEBUG ] Prefetched 2 token orderbooks (scan #23)
+[17:59:47.514] [DEBUG ] Strategies: tried=15 fired=0 errors={}
+[17:59:47.516] [SCAN  ] No signals above 58% (tier GRIND) this scan
+[17:59:48.516] [SCAN  ] Round #24 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[17:59:48.672] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[17:59:49.362] [INFO  ] 💾 State saved: 1 open, 1 pending
+[17:59:49.363] [TRADE ] ✅ FILL: BTC SELL_UP @ 0.109 (waited 8.3s, id=0xfe8efcd4)
+[CLOB] All 5 RPC endpoints failed within 3s budget
+[18:00:00.569] [INFO  ] Resolved 1 pending order(s) this scan
+[18:00:00.574] [INFO  ] 💾 State saved: 1 open, 0 pending
+[18:00:00.914] [DEBUG ] Prefetched 2 token orderbooks (scan #24)
+[18:00:00.916] [DEBUG ] Strategies: tried=15 fired=2 errors={}
+[18:00:00.920] [SIGNAL]   BTC SELL_UP @ 75% [MEDIUM] from ['maker_edge', 'longshot_bias']
+[18:00:00.922] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:00.924] [SIGNAL]   #1 ** [MEDIUM] BTC SELL_UP 75% @ 0.009 | maker_edge
+[18:00:00.925] [TRADE ] 🎯 ENTRY [⚡GRIND] BTC SELL_UP [MEDIUM] size=1.85pUSD @ 0.009 (GTC-FIRST (maker 0% fee)) conf=75% agree=2 | maker_edge
+[18:00:00.926] [TRADE ]    Reason: [MEDIUM:2/15 agree] Maker edge: Sell YES at 0.009 (mid: 0.005, edge: 8000 bps). Longshot overpricing exploitation.
+[18:00:00.927] [TRADE ]    📤 GTC-FIRST: BUY @ 0.009 (maker, 0% fee)
+[CLOB] 📤 V2 GTC BUY 185.00sh @ $0.01 = $1.85 pUSD
+[CLOB] ✅ Order placed: id=0x1a40c4507c1db83e1b4d880a2c0cbf5e6c436eab6edcf4f1d5863acd36e6b536 status=matched
+[18:00:01.875] [TRADE ]    📨 Order placed: id=0x1a40c4507c1db83e1b4d880a2c0cbf5e6c436eab6edcf4f1d5863acd36e6b536 status=MATCHED
+[18:00:02.238] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:02.240] [TRADE ]    ✅ FILLED immediately: d17028e2 @ 0.010 TP=+12% SL=-7%
+[CLOB] All 5 RPC endpoints failed within 3s budget
+[18:00:13.497] [INFO  ] Executed BTC SELL_UP
+[18:00:13.501] [SCAN  ] Executed 1/1 signals
+[18:00:14.499] [SCAN  ] Round #25 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:14.650] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:14.650] [WARN  ] ⚠️ Position BTC SELL_UP market already closed (3s ago) — marking for redemption
+[18:00:14.650] [WARN  ] ⚠️ Position BTC SELL_UP market already closed (1s ago) — marking for redemption
+[18:00:14.650] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:14.650] [INFO  ] Closed 2 positions this scan
+[18:00:15.001] [DEBUG ] Prefetched 2 token orderbooks (scan #25)
+[18:00:15.359] [DEBUG ] Strategies: tried=15 fired=6 errors={}
+[18:00:15.361] [SIGNAL]   BTC UP @ 89% [MAXIMUM] from ['hour_bias', 'momentum_cascade', 'momentum_breakout', 'mean_reversion', 'gtc_deep_limit']
+[18:00:15.362] [SIGNAL]   BTC DOWN @ 68% [SINGLE] from ['microstructure_maker']
+[18:00:15.366] [DEBUG ] Conflict in btc-updown-5m-1779904800: UP wins (89% vs 68%)
+[18:00:15.368] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:15.370] [SIGNAL]   #1 **** [MAXIMUM] BTC UP 89% @ 0.305 | momentum_cascade
+[18:00:15.372] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:16.384] [SCAN  ] Round #26 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:16.384] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:16.390] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:16.390] [DEBUG ] Prefetched 2 token orderbooks (scan #26)
+[18:00:16.390] [DEBUG ] Strategies: tried=15 fired=6 errors={}
+[18:00:16.390] [SIGNAL]   BTC UP @ 89% [MAXIMUM] from ['hour_bias', 'momentum_cascade', 'momentum_breakout', 'mean_reversion', 'gtc_deep_limit']
+[18:00:16.390] [SIGNAL]   BTC DOWN @ 68% [SINGLE] from ['microstructure_maker']
+[18:00:16.390] [DEBUG ] Conflict in btc-updown-5m-1779904800: UP wins (89% vs 68%)
+[18:00:16.399] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:16.400] [SIGNAL]   #1 **** [MAXIMUM] BTC UP 89% @ 0.305 | momentum_cascade
+[18:00:16.400] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:17.418] [SCAN  ] Round #27 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:17.420] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:17.420] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:17.782] [DEBUG ] Prefetched 2 token orderbooks (scan #27)
+[18:00:17.786] [DEBUG ] Strategies: tried=15 fired=5 errors={}
+[18:00:17.788] [SIGNAL]   BTC UP @ 89% [MAXIMUM] from ['hour_bias', 'momentum_cascade', 'momentum_breakout', 'mean_reversion', 'gtc_deep_limit']
+[18:00:17.788] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:17.791] [SIGNAL]   #1 **** [MAXIMUM] BTC UP 89% @ 0.275 | momentum_cascade
+[18:00:17.793] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:18.816] [SCAN  ] Round #28 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:18.820] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:18.824] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:18.826] [DEBUG ] Prefetched 2 token orderbooks (scan #28)
+[18:00:18.828] [DEBUG ] Strategies: tried=15 fired=5 errors={}
+[18:00:18.829] [SIGNAL]   BTC UP @ 89% [MAXIMUM] from ['hour_bias', 'momentum_cascade', 'momentum_breakout', 'mean_reversion', 'gtc_deep_limit']
+[18:00:18.830] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:18.832] [SIGNAL]   #1 **** [MAXIMUM] BTC UP 89% @ 0.275 | momentum_cascade
+[18:00:18.832] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:19.831] [SCAN  ] Round #29 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:19.831] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:19.839] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:20.213] [DEBUG ] Prefetched 2 token orderbooks (scan #29)
+[18:00:20.213] [DEBUG ] Strategies: tried=15 fired=5 errors={}
+[18:00:20.213] [SIGNAL]   BTC UP @ 89% [MAXIMUM] from ['hour_bias', 'momentum_cascade', 'momentum_breakout', 'mean_reversion', 'gtc_deep_limit']
+[18:00:20.226] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:20.226] [SIGNAL]   #1 **** [MAXIMUM] BTC UP 89% @ 0.265 | momentum_cascade
+[18:00:20.226] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:21.221] [SCAN  ] Round #30 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:21.224] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:21.232] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:21.234] [INFO  ] 📊 BTC SELL_UP: PnL=-100.0%, TP=12%, SL=-7%, 0s left, peak=0.0%
+[18:00:21.234] [INFO  ] 📊 BTC SELL_UP: PnL=-100.0%, TP=12%, SL=-7%, 0s left, peak=0.0%
+[18:00:21.236] [DEBUG ] Prefetched 2 token orderbooks (scan #30)
+[18:00:21.236] [DEBUG ] Strategies: tried=15 fired=5 errors={}
+[18:00:21.236] [SIGNAL]   BTC UP @ 89% [MAXIMUM] from ['hour_bias', 'momentum_cascade', 'momentum_breakout', 'mean_reversion', 'gtc_deep_limit']
+[18:00:21.236] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:21.236] [SIGNAL]   #1 **** [MAXIMUM] BTC UP 89% @ 0.265 | momentum_cascade
+[18:00:21.236] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:22.227] [SCAN  ] Round #31 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:22.229] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:22.233] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:22.572] [DEBUG ] Prefetched 2 token orderbooks (scan #31)
+[18:00:22.581] [DEBUG ] Strategies: tried=15 fired=5 errors={}
+[18:00:22.581] [SIGNAL]   BTC UP @ 89% [MAXIMUM] from ['hour_bias', 'momentum_cascade', 'momentum_breakout', 'mean_reversion', 'gtc_deep_limit']
+[18:00:22.581] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:22.581] [SIGNAL]   #1 **** [MAXIMUM] BTC UP 89% @ 0.265 | momentum_cascade
+[18:00:22.581] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:23.579] [SCAN  ] Round #32 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:23.579] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:23.588] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:23.590] [DEBUG ] Prefetched 2 token orderbooks (scan #32)
+[18:00:23.592] [DEBUG ] Strategies: tried=15 fired=5 errors={}
+[18:00:23.592] [SIGNAL]   BTC UP @ 89% [MAXIMUM] from ['hour_bias', 'momentum_cascade', 'momentum_breakout', 'mean_reversion', 'gtc_deep_limit']
+[18:00:23.595] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:23.595] [SIGNAL]   #1 **** [MAXIMUM] BTC UP 89% @ 0.265 | momentum_cascade
+[18:00:23.599] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:24.616] [SCAN  ] Round #33 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:24.766] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:24.772] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:25.149] [DEBUG ] Prefetched 2 token orderbooks (scan #33)
+[18:00:25.149] [DEBUG ] Strategies: tried=15 fired=1 errors={}
+[18:00:25.149] [SIGNAL]   BTC UP @ 82% [SINGLE] from ['gtc_deep_limit']
+[18:00:25.149] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:25.149] [SIGNAL]   #1 * [SINGLE] BTC UP 82% @ 0.100 | gtc_deep_limit
+[18:00:25.164] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:26.156] [SCAN  ] Round #34 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:26.158] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:26.165] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:26.166] [DEBUG ] Prefetched 2 token orderbooks (scan #34)
+[18:00:26.168] [DEBUG ] Strategies: tried=15 fired=1 errors={}
+[18:00:26.169] [SIGNAL]   BTC UP @ 82% [SINGLE] from ['gtc_deep_limit']
+[18:00:26.171] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:26.172] [SIGNAL]   #1 * [SINGLE] BTC UP 82% @ 0.100 | gtc_deep_limit
+[18:00:26.174] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:27.193] [SCAN  ] Round #35 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:27.194] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:27.198] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:27.648] [DEBUG ] Prefetched 2 token orderbooks (scan #35)
+[18:00:27.659] [DEBUG ] Strategies: tried=15 fired=6 errors={}
+[18:00:27.659] [SIGNAL]   BTC UP @ 89% [MAXIMUM] from ['hour_bias', 'momentum_cascade', 'momentum_breakout', 'mean_reversion', 'gtc_deep_limit']
+[18:00:27.661] [SIGNAL]   BTC DOWN @ 68% [SINGLE] from ['microstructure_maker']
+[18:00:27.663] [DEBUG ] Conflict in btc-updown-5m-1779904800: UP wins (89% vs 68%)
+[18:00:27.664] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:27.664] [SIGNAL]   #1 **** [MAXIMUM] BTC UP 89% @ 0.355 | momentum_cascade
+[18:00:27.664] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:28.663] [SCAN  ] Round #36 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:28.663] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:28.672] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:28.672] [DEBUG ] Prefetched 2 token orderbooks (scan #36)
+[18:00:28.680] [DEBUG ] Strategies: tried=15 fired=6 errors={}
+[18:00:28.680] [SIGNAL]   BTC UP @ 89% [MAXIMUM] from ['hour_bias', 'momentum_cascade', 'momentum_breakout', 'mean_reversion', 'gtc_deep_limit']
+[18:00:28.680] [SIGNAL]   BTC DOWN @ 68% [SINGLE] from ['microstructure_maker']
+[18:00:28.680] [DEBUG ] Conflict in btc-updown-5m-1779904800: UP wins (89% vs 68%)
+[18:00:28.680] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:28.680] [SIGNAL]   #1 **** [MAXIMUM] BTC UP 89% @ 0.355 | momentum_cascade
+[18:00:28.680] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:29.696] [SCAN  ] Round #37 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:29.698] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:29.703] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:30.044] [DEBUG ] Prefetched 2 token orderbooks (scan #37)
+[18:00:30.049] [DEBUG ] Strategies: tried=15 fired=6 errors={}
+[18:00:30.050] [SIGNAL]   BTC UP @ 89% [MAXIMUM] from ['hour_bias', 'momentum_cascade', 'momentum_breakout', 'mean_reversion', 'gtc_deep_limit']
+[18:00:30.051] [SIGNAL]   BTC DOWN @ 68% [SINGLE] from ['microstructure_maker']
+[18:00:30.052] [DEBUG ] Conflict in btc-updown-5m-1779904800: UP wins (89% vs 68%)
+[18:00:30.053] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:30.054] [SIGNAL]   #1 **** [MAXIMUM] BTC UP 89% @ 0.385 | momentum_cascade
+[18:00:30.055] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:31.046] [SCAN  ] Round #38 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:31.046] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:31.046] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:31.046] [DEBUG ] Prefetched 2 token orderbooks (scan #38)
+[18:00:31.062] [DEBUG ] Strategies: tried=15 fired=6 errors={}
+[18:00:31.063] [SIGNAL]   BTC UP @ 89% [MAXIMUM] from ['hour_bias', 'momentum_cascade', 'momentum_breakout', 'mean_reversion', 'gtc_deep_limit']
+[18:00:31.063] [SIGNAL]   BTC DOWN @ 68% [SINGLE] from ['microstructure_maker']
+[18:00:31.063] [DEBUG ] Conflict in btc-updown-5m-1779904800: UP wins (89% vs 68%)
+[18:00:31.063] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:31.063] [SIGNAL]   #1 **** [MAXIMUM] BTC UP 89% @ 0.385 | momentum_cascade
+[18:00:31.063] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:32.080] [SCAN  ] Round #39 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:32.082] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:32.086] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:32.436] [DEBUG ] Prefetched 2 token orderbooks (scan #39)
+[18:00:32.437] [DEBUG ] Strategies: tried=15 fired=5 errors={}
+[18:00:32.437] [SIGNAL]   BTC UP @ 89% [MAXIMUM] from ['hour_bias', 'momentum_cascade', 'momentum_breakout', 'gtc_deep_limit']
+[18:00:32.446] [SIGNAL]   BTC DOWN @ 68% [SINGLE] from ['microstructure_maker']
+[18:00:32.447] [DEBUG ] Conflict in btc-updown-5m-1779904800: UP wins (89% vs 68%)
+[18:00:32.447] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:32.447] [SIGNAL]   #1 **** [MAXIMUM] BTC UP 89% @ 0.425 | momentum_cascade
+[18:00:32.447] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:33.446] [SCAN  ] Round #40 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:33.448] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:33.456] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:33.456] [INFO  ] 📊 BTC SELL_UP: PnL=-100.0%, TP=12%, SL=-7%, 0s left, peak=0.0%
+[18:00:33.458] [INFO  ] 📊 BTC SELL_UP: PnL=-100.0%, TP=12%, SL=-7%, 0s left, peak=0.0%
+[18:00:33.460] [DEBUG ] Prefetched 2 token orderbooks (scan #40)
+[18:00:33.468] [DEBUG ] Strategies: tried=15 fired=5 errors={}
+[18:00:33.470] [SIGNAL]   BTC UP @ 89% [MAXIMUM] from ['hour_bias', 'momentum_cascade', 'momentum_breakout', 'gtc_deep_limit']
+[18:00:33.470] [SIGNAL]   BTC DOWN @ 68% [SINGLE] from ['microstructure_maker']
+[18:00:33.472] [DEBUG ] Conflict in btc-updown-5m-1779904800: UP wins (89% vs 68%)
+[18:00:33.474] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:33.474] [SIGNAL]   #1 **** [MAXIMUM] BTC UP 89% @ 0.425 | momentum_cascade
+[18:00:33.476] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:34.477] [SCAN  ] Round #41 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:34.481] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:34.481] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:34.829] [DEBUG ] Prefetched 2 token orderbooks (scan #41)
+[18:00:34.829] [DEBUG ] Strategies: tried=15 fired=1 errors={}
+[18:00:34.846] [SIGNAL]   BTC UP @ 82% [SINGLE] from ['gtc_deep_limit']
+[18:00:34.846] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:34.846] [SIGNAL]   #1 * [SINGLE] BTC UP 82% @ 0.140 | gtc_deep_limit
+[18:00:34.852] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:35.862] [SCAN  ] Round #42 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:36.012] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:36.031] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:36.031] [DEBUG ] Prefetched 2 token orderbooks (scan #42)
+[18:00:36.031] [DEBUG ] Strategies: tried=15 fired=1 errors={}
+[18:00:36.031] [SIGNAL]   BTC UP @ 82% [SINGLE] from ['gtc_deep_limit']
+[18:00:36.031] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:36.031] [SIGNAL]   #1 * [SINGLE] BTC UP 82% @ 0.140 | gtc_deep_limit
+[18:00:36.045] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:37.048] [SCAN  ] Round #43 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:37.049] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:37.056] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:37.435] [DEBUG ] Prefetched 2 token orderbooks (scan #43)
+[18:00:37.435] [DEBUG ] Strategies: tried=15 fired=5 errors={}
+[18:00:37.435] [SIGNAL]   BTC UP @ 89% [MAXIMUM] from ['hour_bias', 'momentum_cascade', 'momentum_breakout', 'gtc_deep_limit']
+[18:00:37.447] [SIGNAL]   BTC DOWN @ 68% [SINGLE] from ['microstructure_maker']
+[18:00:37.449] [DEBUG ] Conflict in btc-updown-5m-1779904800: UP wins (89% vs 68%)
+[18:00:37.449] [SIGNAL] 1 signals (tier ⚡GRIND min_agree=1+):
+[18:00:37.449] [SIGNAL]   #1 **** [MAXIMUM] BTC UP 89% @ 0.435 | momentum_cascade
+[18:00:37.449] [RISK  ] ⛔ BLOCKED: BTC UP — 📊 Correlated exposure limit: crypto_majors at 3.70/2.15 pUSD (50.0% cap)
+[18:00:38.461] [SCAN  ] Round #44 | ⚡GRIN 4.31 pUSD | W/L:0/3 (0%) | DD:-43.5% | L3
+[18:00:39.362] [DEBUG ] CLOB balance sync: 0.57 pUSD
+[CLOB] All 5 RPC endpoints failed within 3s budget
+[18:00:52.112] [DEBUG ] Poly API sync error: 'str' object has no attribute 'market_id'
+[18:00:52.278] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:52.278] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:52.278] [RISK  ] No new entries: 💀 Balance too low (0.57 < 1.0 pUSD) (but still monitoring positions)
+[18:00:57.304] [SCAN  ] Round #45 | ⚡GRIN 0.57 pUSD | W/L:0/3 (0%) | DD:81.1% | L3
+[18:00:57.305] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:00:57.314] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:00:57.314] [RISK  ] No new entries: 💀 Balance too low (0.57 < 1.0 pUSD) (but still monitoring positions)
+[18:01:02.323] [SCAN  ] Round #46 | ⚡GRIN 0.57 pUSD | W/L:0/3 (0%) | DD:81.1% | L3
+[18:01:02.476] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:01:02.482] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:01:02.482] [RISK  ] No new entries: 💀 Balance too low (0.57 < 1.0 pUSD) (but still monitoring positions)
+[18:01:07.493] [SCAN  ] Round #47 | ⚡GRIN 0.57 pUSD | W/L:0/3 (0%) | DD:81.1% | L3
+[18:01:07.495] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:01:07.496] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:01:07.501] [RISK  ] No new entries: 💀 Balance too low (0.57 < 1.0 pUSD) (but still monitoring positions)
+[18:01:12.506] [SCAN  ] Round #48 | ⚡GRIN 0.57 pUSD | W/L:0/3 (0%) | DD:81.1% | L3
+[18:01:12.657] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:01:12.659] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:01:12.663] [RISK  ] No new entries: 💀 Balance too low (0.57 < 1.0 pUSD) (but still monitoring positions)
+[18:01:17.655] [SCAN  ] Round #49 | ⚡GRIN 0.57 pUSD | W/L:0/3 (0%) | DD:81.1% | L3
+[18:01:17.657] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:01:17.663] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:01:17.663] [RISK  ] No new entries: 💀 Balance too low (0.57 < 1.0 pUSD) (but still monitoring positions)
+  📋 Found 8 positions (7 redeemable)
+💰 Auto-redeem: Bitcoin Up or Down - May 25, 10:05AM-10:10AM ET... (163.00 tokens, neg_risk=False)
+  ❌ EOA redeem error: {'code': -32000, 'message': 'insufficient funds for gas * price + value: balance 0, tx cost 111649569291600000, overshot 111649569291600000'}
+⚠️ Redeem failed: 0xe723f4663ffab2...
+[18:01:25.758] [SCAN  ] Round #50 | ⚡GRIN 0.57 pUSD | W/L:0/3 (0%) | DD:81.1% | L3
+[18:01:25.907] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:01:25.924] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:01:25.924] [INFO  ] 📊 BTC SELL_UP: PnL=-100.0%, TP=12%, SL=-7%, 0s left, peak=0.0%
+[18:01:25.924] [INFO  ] 📊 BTC SELL_UP: PnL=-100.0%, TP=12%, SL=-7%, 0s left, peak=0.0%
+[18:01:25.924] [RISK  ] No new entries: 💀 Balance too low (0.57 < 1.0 pUSD) (but still monitoring positions)
+💰 Auto-redeem: Bitcoin Up or Down - May 25, 1:30PM-1:35PM ET... (55.56 tokens, neg_risk=False)
+  ❌ EOA redeem error: {'code': -32000, 'message': 'insufficient funds for gas * price + value: balance 0, tx cost 113153673288400000, overshot 113153673288400000'}
+⚠️ Redeem failed: 0xcc426d46c1d257...
+[18:01:32.873] [SCAN  ] Round #51 | ⚡GRIN 0.57 pUSD | W/L:0/3 (0%) | DD:81.1% | L3
+[18:01:32.873] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:01:32.883] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:01:32.883] [RISK  ] No new entries: 💀 Balance too low (0.57 < 1.0 pUSD) (but still monitoring positions)
+💰 Auto-redeem: Bitcoin Up or Down - May 23, 5:05AM-5:10AM ET... (5.56 tokens, neg_risk=False)
+  ❌ EOA redeem error: {'code': -32000, 'message': 'insufficient funds for gas * price + value: balance 0, tx cost 113245006282000000, overshot 113245006282000000'}
+⚠️ Redeem failed: 0x2dd4ae4089c521...
+  ⛔ Stopping redeem batch after 3 failures (prevents tx queue buildup)
+[18:01:39.994] [SCAN  ] Round #52 | ⚡GRIN 0.57 pUSD | W/L:0/3 (0%) | DD:81.1% | L3
+[18:01:40.139] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:01:40.149] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:01:40.152] [RISK  ] No new entries: 💀 Balance too low (0.57 < 1.0 pUSD) (but still monitoring positions)
+[18:01:40.251] [WARN  ] CLOB WS: no close frame received or sent — reconnect in 2s
+[18:01:43.293] [INIT  ] CLOB Market WS connected + subscribed
+[18:01:45.150] [SCAN  ] Round #53 | ⚡GRIN 0.57 pUSD | W/L:0/3 (0%) | DD:81.1% | L3
+[18:01:45.151] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:01:45.159] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:01:45.159] [RISK  ] No new entries: 💀 Balance too low (0.57 < 1.0 pUSD) (but still monitoring positions)
+[18:01:50.165] [SCAN  ] Round #54 | ⚡GRIN 0.57 pUSD | W/L:0/3 (0%) | DD:81.1% | L3
+[18:01:50.316] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:01:50.323] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:01:50.324] [RISK  ] No new entries: 💀 Balance too low (0.57 < 1.0 pUSD) (but still monitoring positions)
+[18:01:55.335] [SCAN  ] Round #55 | ⚡GRIN 0.57 pUSD | W/L:0/3 (0%) | DD:81.1% | L3
+[18:01:56.355] [DEBUG ] CLOB balance sync: 0.57 pUSD
+[CLOB] All 5 RPC endpoints failed within 3s budget
+[18:02:08.911] [DEBUG ] Poly API sync error: 'str' object has no attribute 'market_id'
+[18:02:09.071] [SCAN  ] Found 1 markets (1 coins x 1 TFs)
+[18:02:09.080] [INFO  ] 💾 State saved: 2 open, 0 pending
+[18:02:09.086] [RISK  ] No new entries: 💀 Balance too low (0.57 < 1.0 pUSD) (but still monitoring positions)
+[18:02:09.446] [INFO  ] Bot stopped by user
+
+
+
+
+
+
+
+
+
+what really happened in polymarket :
+
+Loss
+icon for Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+0.0 shares
+-
+13h ago
+Buy
+icon for Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Up 1¢
+185.0 shares
+-$1.98
+13h ago
+Buy
+icon for Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Up 11¢
+1.7 shares
+-$0.18
+13h ago
+Buy
+icon for Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Up 11¢
+4.3 shares
+-$0.48
+13h ago
+Buy
+icon for Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Up 11¢
+10.0 shares
+-$1.10
+13h ago
+Sell
+icon for Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Up 24¢
+5.9 shares
++$1.40
+13h ago
+Buy
+icon for Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Up 17¢
+5.9 shares
+-$1.00
+13h ago
+Sell
+icon for Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Up 16¢
+17.5 shares
++$2.80
+13h ago
+Buy
+icon for Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Up 10¢
+17.5 shares
+-$1.70
+13h ago
+Sell
+icon for Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Up 7¢
+24.6 shares
++$1.61
+13h ago
+Buy
+icon for Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Bitcoin Up or Down - May 27, 1:55PM-2:00PM ET
+Up 8¢
+24.8 shares
+-$1.98
+13h ago

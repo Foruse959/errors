@@ -1,0 +1,16 @@
+Best main contains more reads docs , api docs and all for more info : 
+https://open-meteo.com/en/docs
+
+Free , 10,000 calls per day
+
+Another : same read docs
+
+https://api.weather.gov/
+
+Open weather :
+https://home.openweathermap.org
+
+Checks docs for endpoint and calls 
+ Api key : fd20b7d42d6a732a7928c89037929c2f
+
+First two api don't need api key, also check for free api sources like this for better integration and best resources as possible for our best bot

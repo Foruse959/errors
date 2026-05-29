@@ -1,0 +1,29 @@
+RESOUCES TWITTER :
+Weather sniper bot turned $151 → $17,758 by placing a single bet on the temperature in Taipei 
+
+He buys YES on Asian temperature buckets in the {0.7¢ – 11¢} range before the market reads the actual CWA / JMA / KMA forecast for that location + date
+
+Forecast says Taipei 24°C → 8% likely. Market prices it at $0.007 → he buys
+
+Result: $0.007 → $1.00 when it hits = +11,594% return
+
+His best trades:
+
+start following him and replicate the same results → predictparity.com/?code=moon
+
+$151 → $17,758 [Taipei 24°C at 0.7¢, +11,594%]
+$207 → $1,954 [Tokyo 25°C+ at 10.6¢, +841%]
+$121 → $1,664 [Hong Kong 26°C at 6.9¢, +1,266%]
+$163 → $1,857 [Hong Kong 25°C NO at 8.7¢, +1,033%]
+$105 → $972 [Seoul 24°C at 9.8¢, +826%]
+
+Edge ratio = (1 − q) / q
+At q = 0.007 → 142× per winning trade
+Real probability just has to clear 1% to prin
+
+You need to read the whole article to understand how it works ↓
+
+
+
+https://x.com/i/status/2059275498660757727
+

@@ -1,0 +1,145 @@
+You are an AI-powered Polymarket Weather Bot. Your goal is to maximize winning probability in weather-related prediction markets (e.g., "Will it rain in New York on June 5?"). 
+
+Your tasks:
+1. **Data Collection**:
+   - Fetch real-time weather forecasts from multiple trusted sources (NOAA, AccuWeather, Weather.com, OpenWeather API).
+   - Compare short-term forecasts (24–72 hours) with long-term models.
+   - Track historical accuracy of each source.
+
+2. **Probability Estimation**:
+   - Use ensemble methods to combine forecasts into a single probability score.
+   - Adjust probabilities based on recent forecast volatility and local climate patterns.
+   - Factor in seasonal trends and anomalies (e.g., monsoon, hurricane season).
+
+3. **Trading Strategy**:
+   - Enter markets where your probability estimate differs significantly from Polymarket odds.
+   - Apply Kelly Criterion or capped bet sizing to manage risk.
+   - Continuously monitor odds and update positions as forecasts change.
+
+4. **Performance Optimization**:
+   - Log every trade with timestamp, forecast data, and outcome.
+   - Learn from past trades to refine weighting of forecast sources.
+   - Avoid overtrading; focus on high-confidence opportunities.
+
+Constraints:
+- Never place trades without at least 2 independent forecast confirmations.
+- Prioritize liquidity and avoid thin markets.
+- Maintain risk management: never allocate more than X% of bankroll to a single market.
+
+
+
+RESOURCES :
+
+5 Different Methodologies That Currently Generate Sustainable Edge on Polymarket Weather Markets
+
+I analyzed more than 30 weather bots through Parity Terminal and identified 5 fundamentally different approaches
+
+From deterministic NWP-based systems to ML-driven bias correction and multi-agent reinforcement learning - here’s a full comparison by probability calibration, adaptability, and infrastructure requirements
+
+1. Forecast-Driven / Model-Based (The Most Popular)
+
+Several independent models (GFS ensemble, ECMWF, HRRR, etc.) converge in the same direction. Strong consensus gives confidence → EV is calculated → entry only with good positive expected value and additional filters
+
+Pros and Cons:
+• Complexity: medium 
+• Profitability: high with good filters 
+• Competition: high and continues to grow 
+• Stability: medium to high with strong consensus 
+• Risks: simultaneous model errors, settlement noise, commissions  
+
+Verdict: The main and most workable approach at the moment  
+
+2. Arbitrage / Latency Bots
+
+Catch short-term inefficiencies: new model runs, divergences between Polymarket and Kalshi, latency. Work in seconds and minutes  
+
+Pros and Cons:
+
+• Complexity: high (requires low-latency infrastructure)
+• Profitability: very high at the start, but windows close quickly
+• Competition: very high
+Competition: very high
+• Stability: low to medium
+• Risks: downtime, slippage, execution errors, regulations
+
+Verdict: For those with serious technical setup. Often combined with forecast  
+
+3. Base-Rate / Statistical Divergence
+
+Use long-term historical statistics by cities and seasons + adjustment for current conditions. Trade against market overreaction to fresh narratives
+
+Pros and Cons:
+
+• Complexity: medium to high (requires serious data science)
+• Profitability: stable and good in the long run
+• Competition: medium
+• Stability: high
+• Risks: fat tails, large data volume, fewer signals
+
+Verdict: Excellent second layer or replacement for forecast after drawdowns
+Autonomous agents based on Claude, Hermes, GPT, etc. They calculate EV + Kelly themselves, run backtesting, calibrate and can combine multiple strategies
+
+Pros and Cons:
+
+• Complexity: high
+• Profitability: potentially the highest (adapt to the market)
+• Competition: medium to high
+• Stability: medium, but grows over time
+• Risks: black box, overfitting, API costs, hallucinations  
+
+Verdict: The future of weather trading. Ideal for “set and forget” with continuous evolution
+
+Like + Repost + Bookmark if you want me to make a detailed breakdown for each of these 5 types with code examples and architecture
+
+
+11 Best Weather Forecasting Models for Polymarket Markets Right Now (Global + Regional Breakdown)
+
+Understanding their regional strengths and update frequencies can dramatically improve your probability estimates and win rate
+
+Here’s the complete regional breakdown of the best models you should be using
+
+> Global models - work for any city
+
+• ECMWF - the gold standard for global forecasting, best accuracy at 5–10 day horizon
+• ECMWF AIFS - AI-powered version of ECMWF, same global coverage, faster updates
+• GFS - solid global coverage, free, widely used as baseline
+• ICON-Global - reliable global model from DWD, good backup to ECMWF
+
+> USA + Canada (LA, NYC, Chicago, Dallas, Miami, SF, Atlanta, Austin, Denver, Seattle)
+
+• HRRR - best short-horizon model for US cities, updates every hour, 3km resolution
+• GEM - very strong for both US and Canada
+• GFS - solid baseline, pairs well with HRRR
+
+> Europe (London, Paris, Madrid, Milan, Amsterdam, Munich, Warsaw, Helsinki, Istanbul, Ankara, Moscow)
+
+• ICON-EU - the strongest regional model across all of Europe
+• AROME - high resolution for Western Europe: France, Spain, Italy, UK
+• UKMO - best for London and Northern Europe specifically
+• ECMWF - always worth including as the global reference
+
+> Central Europe (Warsaw, Munich, Milan, Amsterdam)
+
+• ICON-D2 - highest resolution for Germany, France, Benelux, Poland, Austria, Czech Republic
+• ICON-D2 EPS - ensemble version of ICON-D2, gives you probability distribution instead of single forecast. Use this when the market is binary and close to the threshold
+
+> Asia (Beijing, Shanghai, Guangzhou, Shenzhen, Chengdu, Chongqing, Wuhan, Qingdao, Hong Kong, Taipei, Singapore, Jakarta, Manila, Lucknow)
+
+• JMA-GSM - strong across East Asia and Pacific
+• JMA-MSM - high resolution specifically for Japan and nearby areas
+• ECMWF + ICON-Global - best global options for Southeast Asia and South Asia
+
+> Middle East & Africa (Jeddah, Tel Aviv, Cape Town, Karachi)
+
+• ECMWF - dominant choice, no strong regional alternatives here
+• GFS - reliable backup
+
+The practical workflow: always start with ECMWF as your anchor. Then layer in the regional model that covers your city. Where you have an ensemble version (ICON-D2 EPS) - use it
+
+A single deterministic forecast tells you the expected value. An ensemble tells you the distribution. For binary threshold markets, the distribution is what actually matters
+
+Save this list. If I missed any models, please feel free to mention them in the replies
+
+
+
+
