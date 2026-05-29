@@ -11,6 +11,6 @@ Open weather :
 https://home.openweathermap.org
 
 Checks docs for endpoint and calls 
- Api key : fd20b7d42d6a732a7928c89037929c2f
+ Api key : fd20b7d42d
 
 First two api don't need api key, also check for free api sources like this for better integration and best resources as possible for our best bot
