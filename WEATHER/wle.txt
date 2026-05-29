@@ -1,0 +1,256 @@
+weather logs and error : 
+🌤️  WEATHER SNIPER v2.0.0 — Weather Sniper Pro
+============================================================
+Mode:       🔴 LIVE
+Balance:    $3.00 pUSD
+Max Entry:  $0.15
+Min Edge:   10%
+Kelly:      0.15
+Spread:     ON
+Scan:       every 60s
+============================================================
+
+[17:05:42] 🚀 Weather Sniper Bot starting...
+[17:05:42]    Scan interval: 60s
+[17:05:42]    Days ahead: 3
+[17:05:42]    Strategies: Sniper + Spread
+[17:05:42]    Telegram: ON
+[17:05:42]
+[17:05:42] Telegram command polling started
+[17:05:43]
+════════════════════════════════════════════════════════════
+[17:05:43] 🔍 SCAN #1 — 2026-05-29 11:35:43 UTC
+[17:05:43] ════════════════════════════════════════════════════════════
+[17:05:54] Found 75 active weather markets (3d ahead, 208 checked)
+[17:05:54] Found 75 active weather markets
+[17:05:57] Fetched 21 forecast points for Seoul
+[17:06:01] Fetched 21 forecast points for Hong Kong
+[17:06:02] Fetched 21 forecast points for London
+[17:06:11] 🎯 SNIPER: London | Will the highest temperature i @ $0.1145 | Edge=18.3% | EV=8x | ML=BUY(50%)
+[17:06:14] Derived API key successfully
+[17:06:14] CLOB ready — wallet: 0x066CC5...
+[17:06:15] Order placed: BUY 9 shares @ $0.11
+[17:06:15] ✅ BUY CONFIRMED (LIVE): London Will the highest temperature in London be 24°C on May 29? | 9sh @ $0.1145 | OrderID=0xc307c3e49b... | IN ORDERBOOK
+[17:06:15] 📌 NEW: London Will the highest temperature in London be 24°C on May 29? | 9sh @ $0.1145 | TP=$0.57 | SL=-80.0%
+[17:06:17] Fetched 21 forecast points for Beijing
+[17:06:18] Fetched 21 forecast points for Singapore
+[17:06:19] Fetched 21 forecast points for Tokyo
+[17:06:20] Fetched 21 forecast points for Paris
+[17:06:29] 🎯 SNIPER: Paris | Will the highest temperature i @ $0.0160 | Edge=44.7% | EV=62x | ML=BUY(50%)
+[17:06:30] Order placed: BUY 50 shares @ $0.02
+[17:06:30] ✅ BUY CONFIRMED (LIVE): Paris Will the highest temperature in Paris be 31°C on May 29? | 62sh @ $0.0160 | OrderID=0xd1861119ce... | IN ORDERBOOK
+[17:06:30] 📌 NEW: Paris Will the highest temperature in Paris be 31°C on May 29? | 62sh @ $0.0160 | TP=$0.13 | SL=-80.0%
+[17:06:30] 💎 CONFIDENT: Paris | Will the highest temperat @ $0.016 | P=46% | Edge=45% | EV=62x
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 1177902, sum of active orders: 1000000, sum of matched orders: 0, order amount (inc. fees): 880000"}
+[17:06:31] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 1177902, sum of active orders: 1000000, sum of matched orders: 0, order amount (inc. fees): 880000'}]
+[17:06:31] ⚠️ ORDER FAILED: Paris Will the highest temperature in Paris be 31°C on May 29? — tracked as paper
+[17:06:31] 📌 NEW: Paris Will the highest temperature in Paris be 31°C on May 29? | 56sh @ $0.0160 | TP=$0.13 | SL=-80.0%
+[17:06:32] Fetched 21 forecast points for Taipei
+[17:06:35] Fetched 26 forecast points for Seattle
+[17:06:36] Fetched 25 forecast points for Chicago
+[17:06:37] Fetched 21 forecast points for Madrid
+[17:06:38] Fetched 21 forecast points for Moscow
+[17:06:44] 🎯 SNIPER: Moscow | Will the highest temperature i @ $0.0450 | Edge=10.4% | EV=21x | ML=BUY(71%)
+[17:06:45] Order placed: BUY 25 shares @ $0.04
+[17:06:45] ✅ BUY CONFIRMED (LIVE): Moscow Will the highest temperature in Moscow be 11°C on May 29? | 22sh @ $0.0450 | OrderID=0x22edb5b6f6... | IN ORDERBOOK
+[17:06:45] 📌 NEW: Moscow Will the highest temperature in Moscow be 11°C on May 29? | 22sh @ $0.0450 | TP=$0.36 | SL=-80.0%
+[17:06:47] Fetched 25 forecast points for Atlanta
+[17:06:52] 🎯 SNIPER: Tokyo | Will the lowest temperature in @ $0.1150 | Edge=10.7% | EV=8x | ML=BUY(72%)
+[17:06:53] Order placed: BUY 8 shares @ $0.12
+[17:06:53] ✅ BUY CONFIRMED (LIVE): Tokyo Will the lowest temperature in Tokyo be 22°C on May 29? | 9sh @ $0.1150 | OrderID=0xeb2581d517... | IN ORDERBOOK
+[17:06:53] 📌 NEW: Tokyo Will the lowest temperature in Tokyo be 22°C on May 29? | 9sh @ $0.1150 | TP=$0.58 | SL=-80.0%
+[17:06:56] Fetched 21 forecast points for Buenos Aires
+[17:06:58] 🎯 SNIPER: Buenos Aires | Will the highest temperature i @ $0.0315 | Edge=33.5% | EV=31x | ML=BUY(72%)
+[17:06:59] Order placed: BUY 33 shares @ $0.03
+[17:06:59] ✅ BUY CONFIRMED (LIVE): Buenos Aires Will the highest temperature in Buenos Aires be 13°C on May 29? | 32sh @ $0.0315 | OrderID=0x6e47387bc1... | IN ORDERBOOK
+[17:06:59] 📌 NEW: Buenos Aires Will the highest temperature in Buenos Aires be 13°C on May 29? | 32sh @ $0.0315 | TP=$0.25 | SL=-80.0%
+[17:07:01] Fetched 26 forecast points for Houston
+[17:07:02] Fetched 21 forecast points for Seoul
+[17:07:05] 🎯 SNIPER: Seoul | Will the highest temperature i @ $0.0070 | Edge=19.5% | EV=142x | ML=BUY(78%)
+[17:07:06] Order placed: BUY 100 shares @ $0.01
+[17:07:06] ✅ BUY CONFIRMED (LIVE): Seoul Will the highest temperature in Seoul be 21°C on May 30? | 143sh @ $0.0070 | OrderID=0x8d48265f9c... | IN ORDERBOOK
+[17:07:06] 📌 NEW: Seoul Will the highest temperature in Seoul be 21°C on May 30? | 143sh @ $0.0070 | TP=$0.06 | SL=-80.0%
+[17:07:15] 🎯 SNIPER: Seoul | Will the highest temperature i @ $0.0505 | Edge=10.2% | EV=19x | ML=BUY(50%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1047500"}
+[17:07:16] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1047500'}]
+[17:07:16] ⚠️ ORDER FAILED: Seoul Will the highest temperature in Seoul be 22°C on May 30? — tracked as paper
+[17:07:16] 📌 NEW: Seoul Will the highest temperature in Seoul be 22°C on May 30? | 20sh @ $0.0505 | TP=$0.25 | SL=-80.0%
+[17:07:18] Fetched 26 forecast points for Houston
+[17:07:20] Fetched 26 forecast points for Chicago
+[17:07:21] Fetched 21 forecast points for Hong Kong
+[17:07:22] Fetched 21 forecast points for London
+[17:07:26] 🎯 SNIPER: London | Will the highest temperature i @ $0.0235 | Edge=26.0% | EV=42x | ML=BUY(82%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1049000"}
+[17:07:27] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1049000'}]
+[17:07:27] ⚠️ ORDER FAILED: London Will the highest temperature in London be 25°C on May 30? — tracked as paper
+[17:07:27] 📌 NEW: London Will the highest temperature in London be 25°C on May 30? | 43sh @ $0.0235 | TP=$0.19 | SL=-80.0%
+[17:07:30] 🎯 SNIPER: London | Will the highest temperature i @ $0.1150 | Edge=16.4% | EV=8x | ML=BUY(67%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1002240"}
+[17:07:30] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1002240'}]
+[17:07:30] ⚠️ ORDER FAILED: London Will the highest temperature in London be 26°C on May 30? — tracked as paper
+[17:07:30] 📌 NEW: London Will the highest temperature in London be 26°C on May 30? | 9sh @ $0.1150 | TP=$0.58 | SL=-80.0%
+[17:07:32] Fetched 21 forecast points for Paris
+[17:07:35] 🎯 SNIPER: Paris | Will the highest temperature i @ $0.0125 | Edge=18.0% | EV=79x | ML=BUY(73%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1049500"}
+[17:07:35] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1049500'}]
+[17:07:35] ⚠️ ORDER FAILED: Paris Will the highest temperature in Paris be 30°C on May 30? — tracked as paper
+[17:07:35] 📌 NEW: Paris Will the highest temperature in Paris be 30°C on May 30? | 80sh @ $0.0125 | TP=$0.10 | SL=-80.0%
+[17:07:38] 🎯 SNIPER: Paris | Will the highest temperature i @ $0.0950 | Edge=11.6% | EV=10x | ML=BUY(72%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1045000"}
+[17:07:39] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1045000'}]
+[17:07:39] ⚠️ ORDER FAILED: Paris Will the highest temperature in Paris be 31°C on May 30? — tracked as paper
+[17:07:39] 📌 NEW: Paris Will the highest temperature in Paris be 31°C on May 30? | 11sh @ $0.0950 | TP=$0.47 | SL=-80.0%
+[17:07:41] Fetched 21 forecast points for Beijing
+[17:07:45] 🎯 SNIPER: Beijing | Will the highest temperature i @ $0.0850 | Edge=72.7% | EV=11x | ML=BUY(81%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1035040"}
+[17:07:46] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1035040'}]
+[17:07:46] ⚠️ ORDER FAILED: Beijing Will the highest temperature in Beijing be 34°C or below on May 30? — tracked as paper
+[17:07:46] 📌 NEW: Beijing Will the highest temperature in Beijing be 34°C or below on May 30? | 12sh @ $0.0850 | TP=$0.43 | SL=-80.0%
+[17:07:47] 💎 CONFIDENT: Beijing | Will the highest temperat @ $0.085 | P=81% | Edge=73% | EV=11x
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 470470"}
+[17:07:47] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 470470'}]
+[17:07:47] ⚠️ ORDER FAILED: Beijing Will the highest temperature in Beijing be 34°C or below on May 30? — tracked as paper
+[17:07:47] 📌 NEW: Beijing Will the highest temperature in Beijing be 34°C or below on May 30? | -10sh @ $0.0850 | TP=$0.43 | SL=-80.0%
+[17:07:48] Fetched 21 forecast points for Tokyo
+[17:07:50] Fetched 21 forecast points for Singapore
+[17:07:53] 🎯 SNIPER: Singapore | Will the highest temperature i @ $0.0145 | Edge=33.0% | EV=68x | ML=BUY(74%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1049500"}
+[17:07:54] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1049500'}]
+[17:07:54] ⚠️ ORDER FAILED: Singapore Will the highest temperature in Singapore be 29°C on May 30? — tracked as paper
+[17:07:54] 📌 NEW: Singapore Will the highest temperature in Singapore be 29°C on May 30? | 69sh @ $0.0145 | TP=$0.12 | SL=-80.0%
+[17:08:02] 🎯 SNIPER: Singapore | Will the highest temperature i @ $0.0400 | Edge=17.3% | EV=24x | ML=BUY(50%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1048000"}
+[17:08:03] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1048000'}]
+[17:08:03] ⚠️ ORDER FAILED: Singapore Will the highest temperature in Singapore be 30°C on May 30? — tracked as paper
+[17:08:03] 📌 NEW: Singapore Will the highest temperature in Singapore be 30°C on May 30? | 25sh @ $0.0400 | TP=$0.32 | SL=-80.0%
+[17:08:05] Fetched 21 forecast points for Taipei
+[17:08:06] Fetched 21 forecast points for Buenos Aires
+[17:08:06] 💎 CONFIDENT: Buenos Aires | Will the highest temperat @ $0.255 | P=97% | Edge=72% | EV=3x
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1348100"}
+[17:08:07] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1348100'}]
+[17:08:07] ⚠️ ORDER FAILED: Buenos Aires Will the highest temperature in Buenos Aires be 14°C or below on May 30? — tracked as paper
+[17:08:07] 📌 NEW: Buenos Aires Will the highest temperature in Buenos Aires be 14°C or below on May 30? | -6sh @ $0.2550 | TP=$0.64 | SL=-80.0%
+[17:08:09] Fetched 21 forecast points for Madrid
+[17:08:12] 🎯 SNIPER: Madrid | Will the highest temperature i @ $0.0220 | Edge=65.8% | EV=44x | ML=BUY(68%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1049000"}
+[17:08:13] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1049000'}]
+[17:08:13] ⚠️ ORDER FAILED: Madrid Will the highest temperature in Madrid be 33°C on May 30? — tracked as paper
+[17:08:13] 📌 NEW: Madrid Will the highest temperature in Madrid be 33°C on May 30? | 45sh @ $0.0220 | TP=$0.18 | SL=-80.0%
+[17:08:16] 🎯 SNIPER: Madrid | Will the highest temperature i @ $0.0085 | Edge=14.9% | EV=117x | ML=BUY(74%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1049500"}
+[17:08:18] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1049500'}]
+[17:08:18] ⚠️ ORDER FAILED: Madrid Will the highest temperature in Madrid be 32°C on May 30? — tracked as paper
+[17:08:18] 📌 NEW: Madrid Will the highest temperature in Madrid be 32°C on May 30? | 118sh @ $0.0085 | TP=$0.07 | SL=-80.0%
+[17:08:19] 💎 CONFIDENT: Madrid | Will the highest temperat @ $0.022 | P=68% | Edge=66% | EV=44x
+[17:08:19] Order placed: BUY 5 shares @ $0.02
+[17:08:19] ✅ BUY CONFIRMED (LIVE): Madrid Will the highest temperature in Madrid be 33°C on May 30? | -48sh @ $0.0220 | OrderID=0x510f8c1089... | IN ORDERBOOK
+[17:08:19] 📌 NEW: Madrid Will the highest temperature in Madrid be 33°C on May 30? | -48sh @ $0.0220 | TP=$0.18 | SL=-80.0%
+[17:08:21] Fetched 26 forecast points for Seattle
+[17:08:23] Fetched 26 forecast points for Atlanta
+[17:08:30] 🎯 SNIPER: Atlanta | Will the highest temperature i @ $0.0050 | Edge=98.6% | EV=199x | ML=BUY(99%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1049500"}
+[17:08:31] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1049500'}]
+[17:08:31] ⚠️ ORDER FAILED: Atlanta Will the highest temperature in Atlanta be 75°F or below on May 30? — tracked as paper
+[17:08:31] 📌 NEW: Atlanta Will the highest temperature in Atlanta be 75°F or below on May 30? | 200sh @ $0.0050 | TP=$0.04 | SL=-80.0%
+[17:08:32] Fetched 21 forecast points for Moscow
+[17:08:39] 🎯 SNIPER: Seoul | Will the lowest temperature in @ $0.0050 | Edge=19.7% | EV=199x | ML=BUY(70%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1049500"}
+[17:08:40] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1049500'}]
+[17:08:40] ⚠️ ORDER FAILED: Seoul Will the lowest temperature in Seoul be 20°C on May 30? — tracked as paper
+[17:08:40] 📌 NEW: Seoul Will the lowest temperature in Seoul be 20°C on May 30? | 200sh @ $0.0050 | TP=$0.04 | SL=-80.0%
+[17:08:49] 🎯 SNIPER: Seoul | Will the lowest temperature in @ $0.0220 | Edge=13.2% | EV=44x | ML=BUY(50%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1049000"}
+[17:08:50] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1049000'}]
+[17:08:50] ⚠️ ORDER FAILED: Seoul Will the lowest temperature in Seoul be 19°C on May 30? — tracked as paper
+[17:08:50] 📌 NEW: Seoul Will the lowest temperature in Seoul be 19°C on May 30? | 45sh @ $0.0220 | TP=$0.18 | SL=-80.0%
+[17:08:54] 🎯 SNIPER: Tokyo | Will the lowest temperature in @ $0.0470 | Edge=25.7% | EV=20x | ML=BUY(78%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1047500"}
+[17:08:55] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1047500'}]
+[17:08:55] ⚠️ ORDER FAILED: Tokyo Will the lowest temperature in Tokyo be 22°C on May 30? — tracked as paper
+[17:08:55] 📌 NEW: Tokyo Will the lowest temperature in Tokyo be 22°C on May 30? | 21sh @ $0.0470 | TP=$0.38 | SL=-80.0%
+[17:09:01] 🎯 SNIPER: Paris | Will the lowest temperature in @ $0.0070 | Edge=98.4% | EV=142x | ML=BUY(99%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1049500"}
+[17:09:02] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1049500'}]
+[17:09:02] ⚠️ ORDER FAILED: Paris Will the lowest temperature in Paris be 23°C or higher on May 30? — tracked as paper
+[17:09:02] 📌 NEW: Paris Will the lowest temperature in Paris be 23°C or higher on May 30? | 143sh @ $0.0070 | TP=$0.06 | SL=-80.0%
+[17:09:11] 🎯 SNIPER: London | Will the lowest temperature in @ $0.0070 | Edge=98.4% | EV=142x | ML=BUY(50%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1049500"}
+[17:09:12] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1049500'}]
+[17:09:12] ⚠️ ORDER FAILED: London Will the lowest temperature in London be 19°C or higher on May 30? — tracked as paper
+[17:09:12] 📌 NEW: London Will the lowest temperature in London be 19°C or higher on May 30? | 143sh @ $0.0070 | TP=$0.06 | SL=-80.0%
+[17:09:14] Fetched 26 forecast points for Houston
+[17:09:16] Fetched 26 forecast points for Chicago
+[17:09:17] Fetched 21 forecast points for London
+[17:09:26] 🎯 SNIPER: London | Will the highest temperature i @ $0.1450 | Edge=28.1% | EV=6x | ML=BUY(50%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1022140"}
+[17:09:27] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1022140'}]
+[17:09:27] ⚠️ ORDER FAILED: London Will the highest temperature in London be 21°C on May 31? — tracked as paper
+[17:09:27] 📌 NEW: London Will the highest temperature in London be 21°C on May 31? | 7sh @ $0.1450 | TP=$0.60 | SL=-80.0%
+[17:09:31] 🎯 SNIPER: London | Will the highest temperature i @ $0.0085 | Edge=18.8% | EV=117x | ML=BUY(74%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1049500"}
+[17:09:31] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1049500'}]
+[17:09:31] ⚠️ ORDER FAILED: London Will the highest temperature in London be 20°C on May 31? — tracked as paper
+[17:09:31] 📌 NEW: London Will the highest temperature in London be 20°C on May 31? | 118sh @ $0.0085 | TP=$0.07 | SL=-80.0%
+[17:09:32] 💎 CONFIDENT: London | Will the highest temperat @ $0.145 | P=43% | Edge=28% | EV=6x
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 730100"}
+[17:09:32] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 730100'}]
+[17:09:32] ⚠️ ORDER FAILED: London Will the highest temperature in London be 21°C on May 31? — tracked as paper
+[17:09:32] 📌 NEW: London Will the highest temperature in London be 21°C on May 31? | -24sh @ $0.1450 | TP=$0.60 | SL=-80.0%
+[17:09:34] Fetched 21 forecast points for Seoul
+[17:09:37] 🎯 SNIPER: Seoul | Will the highest temperature i @ $0.0120 | Edge=19.4% | EV=82x | ML=BUY(76%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1049500"}
+[17:09:38] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1049500'}]
+[17:09:38] ⚠️ ORDER FAILED: Seoul Will the highest temperature in Seoul be 22°C on May 31? — tracked as paper
+[17:09:38] 📌 NEW: Seoul Will the highest temperature in Seoul be 22°C on May 31? | 83sh @ $0.0120 | TP=$0.10 | SL=-80.0%
+[17:09:41] 🎯 SNIPER: Seoul | Will the highest temperature i @ $0.0275 | Edge=16.6% | EV=35x | ML=BUY(76%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1038010"}
+[17:09:42] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1038010'}]
+[17:09:42] ⚠️ ORDER FAILED: Seoul Will the highest temperature in Seoul be 23°C on May 31? — tracked as paper
+[17:09:42] 📌 NEW: Seoul Will the highest temperature in Seoul be 23°C on May 31? | 36sh @ $0.0275 | TP=$0.22 | SL=-80.0%
+[17:09:44] Fetched 21 forecast points for Tokyo
+[17:09:49] 🎯 SNIPER: Tokyo | Will the highest temperature i @ $0.0095 | Edge=10.9% | EV=104x | ML=BUY(82%)
+[py_clob_client_v2] request error status=400 url=https://clob.polymarket.com/order body={"error":"not enough balance / allowance: the balance is not enough -\u003e balance: 268522, order amount: 1049500"}
+[17:09:50] Order failed: PolyApiException[status_code=400, error_message={'error': 'not enough balance / allowance: the balance is not enough -> balance: 268522, order amount: 1049500'}]
+[17:09:50] ⚠️ ORDER FAILED: Tokyo Will the highest temperature in Tokyo be 25°C on May 31? — tracked as paper
+[17:09:50] 📌 NEW: Tokyo Will the highest temperature in Tokyo be 25°C on May 31? | 105sh @ $0.0095 | TP=$0.08 | SL=-80.0%
+[17:09:52] Fetched 21 forecast points for Paris
+
+
+
+
+
+fndings and fix to do :
+first it does not check balance or update balance using clob update balance method as in previous bot , i put 2 dollors its buys in real polymarket : Will the highest temperature in London be 24°C on May 29?
+Yes 11¢
+9.0 shares
+11¢
+11.5¢
+$0.99
+$9.00
+$1.04
++$0.05 (4.55%)
+Sell
+
+icon for Will the highest temperature in Seoul be 21°C on May 30?
+Will the highest temperature in Seoul be 21°C on May 30?
+Yes 0.9¢
+100.0 shares
+0.9¢
+0.7¢
+$0.86
+$100.00
+$0.65
+-$0.21 (24.42%)
+Sell
+
+
+and on sitting in orderbook idk if the bot knows it opned a position is that checks the open orders : Will the highest temperature in Madrid be 33°C on May 30?
+Buy
+Yes 2¢
+0 / 5
+$0.10
+Until cancelled
+Cancel
+
+
+it should balance aware , if cant trade erroirs ,check balance using clob update , if no balance or less balance available to trade the signals just skips buying , focus priorty to open orders and position ,parallel check balanvce or update every 10 secs using clob to find others positioned reddemened or balance available now to trade more ,so available trade , dont make eeros ,no balance keep refresh update balance meantime checks opnede position and continue generating signals ,once balance available to rerquirement then trade the signals ,make sure it knows all positions and tracjs ,use subscribe to subscribe the market , in the logs you see it takes many buy but in reality only 2 opened position and one in orderbook ,but it thinks 7 position opemns , no builder code ,api ,updates in the env example file s,i=didnot know everything updated , the subscribe ,man features available in the previous bot , and you can find more in polymarket doc s, pls do more research and better , make the buys logs more visible and detailed , also if sometimes i stop bot and start agaiun it should check open position or running position and orderbook position immediately subscribe and watch as position like position retrieved , be smart , mak ml more useful but efficient token usage, also shpws in logs what ml decided 
