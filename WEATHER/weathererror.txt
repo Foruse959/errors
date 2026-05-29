@@ -1,0 +1,55 @@
+weathererror
+erros : [16:32:03] [ERROR] Error evaluating Highest temperature in London on May 29?: Unknown format code 'f' for object of type 'str'
+
+same error for  paris , Moscow
+
+[16:32:21] [ERROR] Error evaluating Highest temperature in Buenos Aires on M: Unknown format code 'f' for object of type 'str'
+[16:32:22] [INFO ] Fetched 26 forecast points for Houston
+[16:32:23] [INFO ] Fetched 21 forecast points for Seoul
+[16:32:24] [ERROR] Error evaluating Highest temperature in Seoul on May 30?: Unknown format code 'f' for object of type 'str'
+[16:32:25] [INFO ] Fetched 26 forecast points for Houston
+[16:32:27] [INFO ] Fetched 26 forecast points for Chicago
+[16:32:28] [INFO ] Fetched 21 forecast points for Hong Kong
+[16:32:29] [INFO ] Fetched 21 forecast points for London
+[16:32:29] [ERROR] Error evaluating Highest temperature in London on May 30?: Unknown format code 'f' for object of type 'str'
+[16:32:30] [INFO ] Fetched 21 forecast points for Paris
+[16:32:30] [ERROR] Error evaluating Highest temperature in Paris on May 30?: Unknown format code 'f' for object of type 'str'
+[16:32:31] [INFO ] Fetched 21 forecast points for Beijing
+[16:32:32] [ERROR] Error evaluating Highest temperature in Beijing on May 30: Unknown format code 'f' for object of type 'str'
+[16:32:33] [INFO ] Fetched 21 forecast points for Tokyo
+[16:32:34] [INFO ] Fetched 21 forecast points for Singapore
+[16:32:34] [ERROR] Error evaluating Highest temperature in Singapore on May : Unknown format code 'f' for object of type 'str'[16:32:43] [ERROR] Error evaluating Lowest temperature in Seoul on May 30?: Unknown format code 'f' for object of type 'str'
+[16:32:43] [ERROR] Error evaluating Lowest temperature in Tokyo on May 30?: Unknown format code 'f' for object of type 'str'
+[16:32:43] [ERROR] Error evaluating Lowest temperature in Paris on May 30?: Unknown format code 'f' for object of type 'str'
+[16:32:44] [ERROR] Error evaluating Lowest temperature in London on May 30?: Unknown format code 'f' for object of type 'str'
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[16:34:27] [INFO ]   🌤️  WEATHER SNIPER DASHBOARD
+[16:34:27] [INFO ] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[16:34:27] [INFO ]   Mode:        LIVE
+[16:34:27] [INFO ]   Balance:     $3.00
+[16:34:27] [INFO ]   Portfolio:   $13.67
+[16:34:27] [INFO ]   Total PnL:   $+1.67 (+55.7%)
+[16:34:27] [INFO ] ────────────────────────────────────────────────────────────
+[16:34:27] [INFO ]   Trades:      10
+[16:34:27] [INFO ]   Win Rate:    0% (0W / 0L)
+[16:34:27] [INFO ]   Open:        10 positions
+[16:34:27] [INFO ]   Redeemed:    $0.00
+[16:34:27] [INFO ]   Signals:     64 generated
+[16:34:27] [INFO ]   ML Engine:   gpt-5.5 (0 tokens)
+[16:34:27] [INFO ]   Contexts:    5 active markets
+[16:34:27] [INFO ] ────────────────────────────────────────────────────────────
+[16:34:27] [INFO ]   OPEN POSITIONS:
+[16:34:27] [INFO ]     📈 Buenos Aires Will the highest temperature i $0.2550→$0.2700 (+6%)
+[16:34:27] [INFO ]     📈 Moscow       Will the highest temperature i $0.3150→$0.3200 (+2%)
+[16:34:27] [INFO ]     📈 Beijing      Will the highest temperature i $0.3100→$0.3400 (+10%)
+[16:34:27] [INFO ]     📈 Buenos Aires Will the highest temperature i $0.2050→$0.3500 (+71%)
+[16:34:27] [INFO ]     📈 Moscow       Will the highest temperature i $0.3050→$0.3500 (+15%)
+[16:34:27] [INFO ]     📈 Buenos Aires Will the highest temperature i $0.2550→$0.2700 (+6%)
+[16:34:27] [INFO ]     📈 Moscow       Will the highest temperature i $0.3150→$0.3200 (+2%)
+[16:34:27] [INFO ]     📈 Beijing      Will the highest temperature i $0.3100→$0.3400 (+10%)
+[16:34:27] [INFO ]     📈 Buenos Aires Will the highest temperature i $0.2050→$0.3100 (+51%)
+[16:34:27] [INFO ]     📈 Moscow       Will the highest temperature i $0.3050→$0.3500 (+15%) , 
+
+
+i set live in env , i think it traading paper ,check the polymarket v2 bot rep how its work ,the env didn't ask builder code , api thing s, the buy logs in terminal in not visible , btc bot it green in colour , make buy - order confirmed ,in orderbook ,id all in green , if its close in profit shows the message in yellow plus light green two gtradient off off , if stoploss exit or lose shows in orange in logs , error proble in red , main things it does not derive api key initialized client ,uses webscocket o polymarket or subscribed to markwt , check and fix all this and update the seession md apppend
